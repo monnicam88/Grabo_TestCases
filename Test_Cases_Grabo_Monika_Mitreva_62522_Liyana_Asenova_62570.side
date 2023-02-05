@@ -1,0 +1,5365 @@
+{
+  "id": "69bfa2ce-fa8a-461c-b856-3af130572bc3",
+  "version": "2.0",
+  "name": "Test_Cases_Grabo_Monika_Mitreva_62522_Liyana_Asenova_62570",
+  "url": "https://grabo.bg",
+  "tests": [{
+    "id": "9816a75b-4034-4184-b445-0e80d45aabca",
+    "name": "FoodSection",
+    "commands": [{
+      "id": "615736d4-a94f-4ae4-8cf0-4be8832e838a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c140725f-a54a-480a-953f-acddfa402ad6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c215345-8a5a-46c5-94cb-de5a2d9451e9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.rdsgn_rnavitem:nth-child(10) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(10) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[10]/strong", "xpath:idRelative"],
+        ["xpath=//a[10]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Хапване')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc577df3-0d75-452b-83a0-949cf9e283ec",
+      "comment": "",
+      "command": "echo",
+      "target": "category \"Food\" exists",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0454e29e-1336-421a-b494-150fb504f0a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(10) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(10) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[10]/strong", "xpath:idRelative"],
+        ["xpath=//a[10]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Хапване')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5182019a-cfd6-43da-9ec4-14a0d18b0b0a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.selected:nth-child(1) > strong",
+      "targets": [
+        ["css=.selected:nth-child(1) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/div/a/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Хапване')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c135c7a-c76d-4e68-a5a7-b4e8ac9a59ca",
+      "comment": "",
+      "command": "echo",
+      "target": "The food category is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a8d8db8-7c06-43eb-a263-6dbcbf797df3",
+      "comment": "",
+      "command": "store",
+      "target": "hasVouchers",
+      "targets": [],
+      "value": "false"
+    }, {
+      "id": "4f66a598-1eb7-4f76-8bef-d663219aecc5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.deals_browse_subcats",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbff4e6c-ccff-4ecb-b57a-bffae28bc2bd",
+      "comment": "",
+      "command": "echo",
+      "target": "Food subcategories are present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f313e0d7-12ef-42ad-a98b-b5c757c2f517",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"sitebody\"]/div/div[1]/div[3]/a",
+      "targets": [],
+      "value": "foodCats"
+    }, {
+      "id": "4ae0e20f-df33-409c-ab40-865564f3aa7e",
+      "comment": "",
+      "command": "echo",
+      "target": "There are ${foodCats} food categories.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "334ee3a9-09c3-4e34-a1f0-a2fec5bb5020",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 2",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "3078d652-6e83-4400-94d9-998fcea2ea77",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ae44ac8-9520-4a7f-8d2c-6e666ec18b92",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffc44e4a-f51e-4956-ac24-f283d2d6290d",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [
+        ["linkText=Заведения и ресторанти", "linkText"],
+        ["css=.item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia/restoranti/zavedenia')]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Заведения и ресторанти')]", "xpath:innerText"]
+      ],
+      "value": "cat"
+    }, {
+      "id": "ed875813-ffa8-4298-813b-c7f970997c70",
+      "comment": "",
+      "command": "echo",
+      "target": "Current category : ${cat} is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "331265de-3739-4346-af24-ad7d928396c2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [
+        ["linkText=Заведения и ресторанти", "linkText"],
+        ["css=.item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia/restoranti/zavedenia')]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Заведения и ресторанти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e781b9c-e662-42a0-a720-264ba01ac075",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"sidedeals_cnt\"]/div/div/div",
+      "targets": [],
+      "value": "vouchers"
+    }, {
+      "id": "6380e79b-7d48-4d26-8d58-c197bed4e3aa",
+      "comment": "",
+      "command": "if",
+      "target": "${vouchers} > 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "778e8282-269c-411a-b9fb-a205b5c80069",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sidedeals_cnt']/div/div/div/div/a[3]",
+      "targets": [
+        ["linkText=Суши сет с 24, 50 или 88 хапки, плюс 150мл соев сос Kikkoman", "linkText"],
+        ["css=.br_deal:nth-child(1) .br_deal_title", "css:finder"],
+        ["xpath=//a[contains(text(),'Суши сет с 24, 50 или 88 хапки, плюс 150мл соев сос Kikkoman')]", "xpath:link"],
+        ["xpath=//div[@id='sidedeals_cnt']/div/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/sofia/ekzotichno-hapvane-07dwggq')])[2]", "xpath:href"],
+        ["xpath=//div[6]/div/div/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Суши сет с 24, 50 или 88 хапки, плюс 150мл соев сос Kikkoman')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99dbc6ef-335c-41fc-ba03-98756202fbfd",
+      "comment": "",
+      "command": "echo",
+      "target": "Opening the first voucher.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c43268f-6b90-451d-98dc-dd62b54970f5",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.vppath_step:nth-child(4) .vppath_step_main > span",
+      "targets": [],
+      "value": "tempCat"
+    }, {
+      "id": "fa277c31-f109-4de5-9796-31b65844cf2d",
+      "comment": "",
+      "command": "echo",
+      "target": "The chosen category is ${cat} , The displayed category is ${tempCat}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b76a6b8b-817d-4acb-b76e-451ddd49053b",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfc05bdf-41ee-47a2-94eb-5fa320e0e97f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "646b96ea-eb36-4d51-8d8f-ced7d7c59698",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(10) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(10) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[10]/strong", "xpath:idRelative"],
+        ["xpath=//a[10]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Хапване')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df8c3a66-681d-43f8-8ece-f562d77f96a5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${loopvariable} + 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "9811a37b-6074-463a-b0a7-00203035f44f",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${loopvariable} < ${foodCats}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "65d78655-9c78-4e1b-aac7-cb4b8f11c613",
+    "name": "TravelSection",
+    "commands": [{
+      "id": "0333a2c7-6eb6-4780-892c-7aecdf005b5c",
+      "comment": "",
+      "command": "open",
+      "target": "/sofia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01a722d8-0040-45b4-91bc-ceee822e8f45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef3c66da-a79f-452a-8884-a73eb1e04884",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.rdsgn_rnavitem:nth-child(2) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[2]/strong", "xpath:idRelative"],
+        ["xpath=//a[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Почивки България')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "267ad412-52b5-4319-be17-df7d1230c8ee",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.rdsgn_rnavitem:nth-child(2) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[2]/strong", "xpath:idRelative"],
+        ["xpath=//a[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Почивки България')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "892c47bd-25aa-4f71-a938-13341dacda1a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.rdsgn_rnavitem:nth-child(2) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[2]/strong", "xpath:idRelative"],
+        ["xpath=//a[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Почивки България')]", "xpath:innerText"]
+      ],
+      "value": "cat"
+    }, {
+      "id": "b6b4d1b0-d2ba-45dd-b9c1-a9d01ac75694",
+      "comment": "",
+      "command": "echo",
+      "target": "${cat}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d494f32-d5e5-4023-9aaa-197307458591",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(2) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[2]/strong", "xpath:idRelative"],
+        ["xpath=//a[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Почивки България')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83b25b3f-0015-4377-864c-f0a78f419d3d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.active",
+      "targets": [
+        ["css=.active", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/travel/abroad')]", "xpath:href"],
+        ["xpath=//div[12]/div/div/div/div/div/a[3]", "xpath:position"]
+      ],
+      "value": "${cat}"
+    }, {
+      "id": "d7c1ef16-7067-4800-89df-a5da5a8230c1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "4fbc46fa-2638-49a8-899d-54b1b61f41c5",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id='menu_properties']/div/div/div[@class='tn_optionsbox_cnt2']/div[@class='tn_option']",
+      "targets": [],
+      "value": "objectCount"
+    }, {
+      "id": "64f3b939-458a-4541-8a71-fa54a304dca7",
+      "comment": "",
+      "command": "echo",
+      "target": "The types of objects are: ${objectCount}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b972da9f-e4cb-47a6-bec8-fbc3f3d8ce4f",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92d5fc4d-517c-4b2c-9eb2-3aecd53c115e",
+      "comment": "",
+      "command": "store",
+      "target": "Море",
+      "targets": [],
+      "value": "type"
+    }, {
+      "id": "bb111fd7-609b-4ba3-9eb4-77906a44e81b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${type}",
+      "targets": [
+        ["linkText=Море", "linkText"],
+        ["css=#menu_tags .tn_option:nth-child(1) > .tn_selectbox", "css:finder"],
+        ["xpath=//a[contains(text(),'Море')]", "xpath:link"],
+        ["xpath=//div[@id='menu_tags']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Море')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e201670-4520-4d7b-b53f-dfab62e1cff3",
+      "comment": "",
+      "command": "store",
+      "target": "3",
+      "targets": [],
+      "value": "stars"
+    }, {
+      "id": "aae8469e-03f6-4cea-8d31-c1e1acf632b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${stars}",
+      "targets": [
+        ["linkText=3", "linkText"],
+        ["css=.stars .tn_option:nth-child(3) > .tn_selectbox", "css:finder"],
+        ["xpath=(//a[contains(text(),'3')])[7]", "xpath:link"],
+        ["xpath=//div[@id='menu_stars']/div/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b223bd8-28ae-4740-94c9-95eb831bd3f2",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='menu_properties']/div/div/div/div[${loopvariable}]/a",
+      "targets": [
+        ["linkText=Хотел", "linkText"],
+        ["css=#menu_properties .tn_option:nth-child(1) > .tn_selectbox", "css:finder"],
+        ["xpath=//a[contains(text(),'Хотел')]", "xpath:link"],
+        ["xpath=//div[@id='menu_properties']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Хотел')]", "xpath:innerText"]
+      ],
+      "value": "typeObject"
+    }, {
+      "id": "db9751ab-57a4-4e7d-91a5-c0646b1dca74",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='menu_properties']/div/div/div/div[${loopvariable}]/a",
+      "targets": [
+        ["linkText=Хотел", "linkText"],
+        ["css=#menu_properties .tn_option:nth-child(1) > .tn_selectbox", "css:finder"],
+        ["xpath=//a[contains(text(),'Хотел')]", "xpath:link"],
+        ["xpath=//div[@id='menu_properties']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Хотел')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaf1dc82-0273-48f7-8557-be6dc484dc68",
+      "comment": "",
+      "command": "store",
+      "target": "Без изхранване",
+      "targets": [],
+      "value": "foodOption"
+    }, {
+      "id": "246c2937-f94c-4412-8add-810a4e980ea5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${foodOption}",
+      "targets": [
+        ["linkText=Без изхранване", "linkText"],
+        ["css=#menu_boards .tn_option:nth-child(1) > .tn_selectbox", "css:finder"],
+        ["xpath=//a[contains(text(),'Без изхранване')]", "xpath:link"],
+        ["xpath=//div[@id='menu_boards']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Без изхранване')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e127b0a2-df32-469d-b050-4359df3833d5",
+      "comment": "",
+      "command": "store",
+      "target": "Двойна стая",
+      "targets": [],
+      "value": "numberOfRooms"
+    }, {
+      "id": "28b0e30f-5b36-4b58-ad61-1bb6a4888d96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${numberOfRooms}",
+      "targets": [
+        ["linkText=Двойна стая", "linkText"],
+        ["css=#menu_rooms .tn_option:nth-child(1) > .tn_selectbox", "css:finder"],
+        ["xpath=//a[contains(text(),'Двойна стая')]", "xpath:link"],
+        ["xpath=//div[@id='menu_rooms']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Двойна стая')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b9a489c-9a7d-4e07-adcc-0635e1e84a5f",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id='deals_container']/div/div/div",
+      "targets": [],
+      "value": "vouchers"
+    }, {
+      "id": "4c98873c-8217-48dd-89fa-9c90216f867d",
+      "comment": "",
+      "command": "echo",
+      "target": "${vouchers}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cbe8f56-e03b-461f-abb2-4ea7967c431e",
+      "comment": "",
+      "command": "if",
+      "target": "${vouchers} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee1bd9c0-802a-44a2-9bfb-2182e1441ae8",
+      "comment": "",
+      "command": "echo",
+      "target": "There are vouchers available.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1332ab38-e13d-4c9e-9002-0ed0d897166a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.br_deal:nth-child(1) .br_deal_pic_bord",
+      "targets": [
+        ["css=.br_deal:nth-child(1) .br_deal_pic_bord", "css:finder"],
+        ["xpath=//div[@id='deals_container']/div/div/div/div/a/em", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/a/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3007aeca-38a5-4137-94d1-ee1aa929df8e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.vppath_last",
+      "targets": [
+        ["css=.vppath_last", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": "objectTitle"
+    }, {
+      "id": "44684db6-8680-4dc6-9c25-79143231288c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var t = ${objectTitle}; var str = ${typeObject}; return t.includes(str);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "75a849df-5970-467a-8c94-714f6094d2d5",
+      "comment": "",
+      "command": "echo",
+      "target": "${objectTitle}; ${typeObject}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3e0b2a3-9f12-407b-9395-bef1e39eb533",
+      "comment": "",
+      "command": "verify",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "a26fd53f-00d7-48b7-832f-fe35439d0b2e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54d86ff0-dc6a-4289-a177-f11d49aede7b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${loopvariable} + 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "7f7f7e0f-afdc-467f-9d32-50bf59d16a33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55afe3d5-b2e7-4836-be30-ef7bf965326a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(2) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(2) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[2]/strong", "xpath:idRelative"],
+        ["xpath=//a[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Почивки България')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9ab1216-b3c0-4282-bc2a-75c9d5f19d83",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${loopvariable} <= ${objectCount}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "05bc576f-a391-412e-b4a4-8c705327fd5c",
+    "name": "CouponsSearchBar",
+    "commands": [{
+      "id": "0d8399be-035f-49ac-960b-c2a1aea9ce11",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34744a15-74e9-4362-81b1-9678c954613d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7614002-9dc8-4902-96ab-318e7a2d049a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[@id='searchhdr_holder']/span",
+      "targets": [
+        ["css=.nhdr_search_icon", "css:finder"],
+        ["xpath=//span[@id='searchhdr_holder']/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "736d70b0-ebee-4236-b26d-64a42e9f40f4",
+      "comment": "",
+      "command": "echo",
+      "target": "Search bar is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c698a61-679b-4029-bfba-2603cadf5d2b",
+      "comment": "",
+      "command": "store",
+      "target": "Хотел",
+      "targets": [],
+      "value": "searchFor"
+    }, {
+      "id": "1c04bea7-4b83-4aa4-b65e-10c046287c5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_search_icon",
+      "targets": [
+        ["css=.nhdr_search_icon", "css:finder"],
+        ["xpath=//span[@id='searchhdr_holder']/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85f68d4c-9a20-4fa1-acf4-fb807b27060e",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchhdr_input",
+      "targets": [
+        ["id=searchhdr_input", "id"],
+        ["css=#searchhdr_input", "css:finder"],
+        ["xpath=//input[@id='searchhdr_input']", "xpath:attributes"],
+        ["xpath=//span[@id='searchhdr_holder']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${searchFor}"
+    }, {
+      "id": "03bd8aa4-bfdc-484d-a1ee-bf321bb1e8d5",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id='searchhdr_content']/ul[2]/li",
+      "targets": [],
+      "value": "vouchers"
+    }, {
+      "id": "8dafa0d3-2426-4cce-81bb-0047e39e0f99",
+      "comment": "",
+      "command": "echo",
+      "target": "There are ${vouchers} available.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15b74c56-04cd-4432-b308-aba1c4a92961",
+      "comment": "",
+      "command": "if",
+      "target": "${vouchers} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d88aff38-ecf1-4304-a182-5864f07c3e1b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='searchhdr_content']/ul[2]/li/a/div",
+      "targets": [
+        ["css=.hovered .searchhdr_suggester_deal", "css:finder"],
+        ["xpath=//div[@id='searchhdr_content']/ul[2]/li/a/div", "xpath:idRelative"],
+        ["xpath=//ul[2]/li/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1076e72-a3d2-4228-84c0-e78f4de768f5",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='nvp_deal']/h1/a",
+      "targets": [
+        ["linkText=Почивка в Златни пясъци! Нощувка на база All Inclusive, плюс вътрешен басейн и релакс зона, от Хотелски комплекс Плиска***", "linkText"],
+        ["name=topscroll", "name"],
+        ["css=h1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Почивка в Златни пясъци! Нощувка на база All Inclusive, плюс вътрешен басейн и релакс зона, от Хотелски комплекс Плиска***')]", "xpath:link"],
+        ["xpath=//a[@name='topscroll']", "xpath:attributes"],
+        ["xpath=//div[@id='nvp_deal']/h1/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/relaks-zl-piasatzi-027w66m')]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Почивка в Златни пясъци! Нощувка на база All Inclusive, плюс вътрешен басейн и релакс зона, от Хотелски комплекс Плиска***')]", "xpath:innerText"]
+      ],
+      "value": "voucherDesc"
+    }, {
+      "id": "0ee19b59-483a-4e0b-a3df-e5b437dc266b",
+      "comment": "",
+      "command": "echo",
+      "target": "${searchFor}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "476f530e-4588-4232-bf6a-8d24944f673e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var t = ${voucherDesc}; var str = ${searchFor}; return t.includes(str);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "df7a6dff-81aa-49d0-89a8-5c82bd413e75",
+      "comment": "",
+      "command": "verify",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "5f86aef4-3585-410b-946d-1b04dde67d1c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "16f782ac-e9a3-4e16-b923-8a88787bf158",
+    "name": "RegisterWithValidUserInformation",
+    "commands": [{
+      "id": "fa25be04-90ed-450c-a2b7-73ef92459182",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29ead0da-48fa-4c0f-97b2-e89d142cde2a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "928bb58f-0eff-40ce-8e78-b13f096ca85e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='usernav']/a[3]",
+      "targets": [
+        ["linkText=Регистрация", "linkText"],
+        ["css=.navitem:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[@onclick='hdr_signupp(); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='usernav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/signup')]", "xpath:href"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea0bec2-f85e-4d5f-acbd-aa5061ef5a56",
+      "comment": "",
+      "command": "echo",
+      "target": "There is a registration button.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10d8312d-c289-427f-8d01-f218c6df2cfa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Регистрация",
+      "targets": [
+        ["linkText=Регистрация", "linkText"],
+        ["css=.navitem:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[@onclick='hdr_signupp(); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='usernav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/signup')]", "xpath:href"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "555c94f7-2700-4063-b25e-8a035597175e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#droplogin_signup .droplogin_form",
+      "targets": [
+        ["css=#droplogin_signup .droplogin_form", "css:finder"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[11]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "665c50d2-4804-4eb6-8dee-42741062eccc",
+      "comment": "",
+      "command": "echo",
+      "target": "The registration tab is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7cbf05a-f349-4dc2-ada7-48c8a285dfd4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=#droplogin_signup .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dee558c-f6f1-406c-8fc0-a7ed46aa7384",
+      "comment": "",
+      "command": "echo",
+      "target": "There is a full name tab.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ac80050-415e-459d-bfb1-a9773397db0e",
+      "comment": "",
+      "command": "store",
+      "target": "Спас Спасов",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "2fbeeb20-8dd2-4b6e-b488-08def95e76d3",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=#droplogin_signup .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe90c93b-33de-409d-8b9c-7a650d5236cb",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=#droplogin_signup .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "56f71392-2607-4fe6-b616-28abf2cee181",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#droplogin_signup .accountinputs:nth-child(4)",
+      "targets": [
+        ["css=#droplogin_signup .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='email'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "289d43e7-8dec-42a0-975a-dc6e7083062a",
+      "comment": "",
+      "command": "echo",
+      "target": "There is an e-mail tab.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1533329-d7e2-46ff-86e9-ab56b8a13c37",
+      "comment": "",
+      "command": "store",
+      "target": "JamesVSmith@teleworm.us",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "f1595ca3-33ac-4805-8d2d-e3e512a5cc76",
+      "comment": "",
+      "command": "click",
+      "target": "css=#droplogin_signup .accountinputs:nth-child(4)",
+      "targets": [
+        ["css=#droplogin_signup .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='email'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75b1739a-d556-454a-a5d0-ee182977d3f7",
+      "comment": "",
+      "command": "type",
+      "target": "css=#droplogin_signup .accountinputs:nth-child(4)",
+      "targets": [
+        ["css=#droplogin_signup .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='email'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "cec3422b-bb31-44a5-9fbe-22df296b1a6e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.accountinputs:nth-child(6)",
+      "targets": [
+        ["css=.accountinputs:nth-child(6)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e69cad2a-3f88-44f1-ad79-502e818dfd85",
+      "comment": "",
+      "command": "echo",
+      "target": "There is a password tab.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38e067ba-c7a4-4106-a415-55413df5c857",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//input[@name=\"password\"][@type='password'])",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87c2197d-35f5-42bf-9fb9-e24f32a49bf0",
+      "comment": "",
+      "command": "echo",
+      "target": "The password is masked.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82f54632-f02e-47c8-b525-005220e714b8",
+      "comment": "",
+      "command": "store",
+      "target": "Spasspasov1!",
+      "targets": [],
+      "value": "pass"
+    }, {
+      "id": "d24297b8-0373-4c4e-bc08-e0d08ac80738",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@name='password'])[2]",
+      "targets": [
+        ["css=.accountinputs:nth-child(6)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42867466-834b-4183-aa94-9e571ecc464b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@name='password'])[2]",
+      "targets": [
+        ["css=.accountinputs:nth-child(6)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": "${pass}"
+    }, {
+      "id": "1776b57d-72ba-4492-bec6-f0c69c5d42c3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=password2",
+      "targets": [
+        ["name=password2", "name"],
+        ["css=.accountinputs:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='password2']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8afc4416-0c5c-4177-9ed0-fe70826e49c2",
+      "comment": "",
+      "command": "echo",
+      "target": "There is a re-enter password tab.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d76c06eb-cf08-4615-bf40-a218f7166e7d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//input[@name=\"password2\"][@type='password'])",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30f684df-b004-415d-b805-cf0eb4f82e5f",
+      "comment": "",
+      "command": "echo",
+      "target": "The re-entered password is masked.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9235e3b-caaf-4f72-b2c1-90823fcd452c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='password2']",
+      "targets": [
+        ["name=password2", "name"],
+        ["css=.accountinputs:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='password2']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bc0c6fd-a8c6-44e2-a6d3-40bbbd75e4eb",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='password2']",
+      "targets": [
+        ["name=password2", "name"],
+        ["css=.accountinputs:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='password2']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "${pass}"
+    }, {
+      "id": "042ceec4-a11f-42b0-803d-d6be1a23f1a9",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=label:nth-child(11) > input", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/label[3]/input", "xpath:idRelative"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28fb4084-9967-4450-8864-61975cc12c3c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.accountbtn:nth-child(12) > b",
+      "targets": [
+        ["css=.accountbtn:nth-child(12) > b", "css:finder"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/a/b", "xpath:idRelative"],
+        ["xpath=//div[16]/div[2]/div/form/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Регистрирай ме')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27da7118-c872-43e6-b4b9-befa297a4f92",
+      "comment": "",
+      "command": "echo",
+      "target": "There is a registration button.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65bf972b-db92-4fb6-bcbe-e25f8e24a828",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn:nth-child(12) > b",
+      "targets": [
+        ["css=.accountbtn:nth-child(12) > b", "css:finder"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/a/b", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Регистрирай ме')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "79b6f139-7b97-4c42-8518-db6d17aee207",
+    "name": "SignIn",
+    "commands": [{
+      "id": "b744eabc-ada0-4a20-b004-0b235e15f462",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42da698c-f305-4dea-9c21-4a2a4cc14719",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x895",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7aae937-758c-4680-9d0e-2fc4cdc65d9c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(.,'Вход')]",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.frst", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@onclick='hdr_signinn(); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='usernav']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/signin')]", "xpath:href"],
+        ["xpath=//div[2]/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f47665f-4612-48e6-bdde-2de9257b76ac",
+      "comment": "",
+      "command": "echo",
+      "target": "There is a login button.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c7f8ad9-a761-4a65-98ba-5f288974bbe2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вход",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.frst", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//a[@onclick='hdr_signinn(); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='usernav']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/signin')]", "xpath:href"],
+        ["xpath=//div[2]/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98f7ef70-c6b2-4c99-9f63-2b8f2e69afea",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#droplogin_signin .droplogin_form",
+      "targets": [
+        ["css=#droplogin_signin .droplogin_form", "css:finder"],
+        ["xpath=//div[@id='droplogin_signin']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a09419a3-8320-4634-a309-112a1cd779ab",
+      "comment": "",
+      "command": "echo",
+      "target": "The login tab is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b74b741f-ccba-4299-9786-a4b5acb19011",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#droplogin_signin .accountinputs:nth-child(2)",
+      "targets": [
+        ["css=#droplogin_signin .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='email'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signin']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4376528-53e2-47b2-8aa0-635cbdd6f08e",
+      "comment": "",
+      "command": "echo",
+      "target": "There is an email tab.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "858c468a-2494-4395-b9d2-be65fd75abf8",
+      "comment": "",
+      "command": "store",
+      "target": "JamesVSmith@teleworm.us",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "0dd08b78-e49e-4e5c-b257-109599283f62",
+      "comment": "",
+      "command": "type",
+      "target": "css=#droplogin_signin .accountinputs:nth-child(2)",
+      "targets": [
+        ["css=#droplogin_signin .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='email'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signin']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "d786e98d-628f-41e3-b347-a5d8cbbdc8aa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#droplogin_signin .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signin']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e63255-e775-4917-8d67-dc846509a049",
+      "comment": "",
+      "command": "echo",
+      "target": "The password tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65ee8a17-6963-441c-9319-2c58a47e7cee",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@name='password'][@type='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55e9c4be-bab1-4c40-b1e3-c8544b6f6f22",
+      "comment": "",
+      "command": "echo",
+      "target": "The password is masked.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb5bcfca-4b9a-4350-8a93-ae29c480d213",
+      "comment": "",
+      "command": "store",
+      "target": "Spasspasov1!",
+      "targets": [],
+      "value": "pass"
+    }, {
+      "id": "8c6eb31b-9c1d-4509-ade2-060feca9e488",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#droplogin_signin .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signin']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3f87e59-71f7-4e39-882d-b18b9705a13d",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#droplogin_signin .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signin']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "${pass}"
+    }, {
+      "id": "9c921f78-716e-4b7b-8da5-4500bdc373af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn:nth-child(5) > b",
+      "targets": [
+        ["css=.accountbtn:nth-child(5) > b", "css:finder"],
+        ["xpath=//div[@id='droplogin_signin']/div[2]/div/form/a/b", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c90b9b05-d041-46f5-9e74-6a81d0a5031c",
+    "name": "AddCouponInTheShoppingCart",
+    "commands": [{
+      "id": "48a54a64-155d-4ef3-8e14-f65139183b35",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "212a2dc1-e15d-46cb-a5f0-dfe53056eee4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24a7abcc-531f-454f-b8ec-3a4cccbc8155",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[4]",
+      "targets": [
+        ["css=.rdsgn_twodeals", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[4]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5f481d-f413-4beb-87e2-41251a99650e",
+      "comment": "",
+      "command": "echo",
+      "target": "Voucher tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f39d1e9-75db-4c00-8ac3-88fbe497b45b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "edeccc49-801b-4117-ba22-3981cb8756c1",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"sitebody\"]/div/div[1]/div[4]/div",
+      "targets": [],
+      "value": "vouchers"
+    }, {
+      "id": "359c5d96-6530-48bb-aef1-3ad92e56d4df",
+      "comment": "",
+      "command": "echo",
+      "target": "There are ${vouchers} vouchers.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abfaafc6-f935-4740-a023-339e5b2389f8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "totalPrice"
+    }, {
+      "id": "1e615cbc-b3c3-4a3d-92e3-ee62068d3bd9",
+      "comment": "",
+      "command": "if",
+      "target": "${vouchers} > 1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6de1b761-dbcb-4b67-b702-d9650e28980b",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "572ab90f-2fc5-4e19-a77f-1db4b2288b97",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[4]/div[${loopvariable}]/div/a/em",
+      "targets": [
+        ["css=.rdsgn_tdeal:nth-child(1) .tdeal_img_bord", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[4]/div/div/a/em", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0adcd81a-5bda-487f-a40b-d50f8e9200a5",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.dvvt-prc > strong",
+      "targets": [
+        ["css=.dvvt-prc > strong", "css:finder"],
+        ["xpath=//div[@id='nvp_dealinfo']/div[3]/table/tbody/tr/td[2]/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'27.90 лв')]", "xpath:innerText"]
+      ],
+      "value": "tempPrice"
+    }, {
+      "id": "00b267d6-d9c4-4587-97df-f75a33f6f2e5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var str = ${tempPrice}; return(str.substring(0, str.length-3));",
+      "targets": [],
+      "value": "tempPrice"
+    }, {
+      "id": "b8249c13-eb5f-4f36-b60e-89b136b67d40",
+      "comment": "",
+      "command": "echo",
+      "target": "${tempPrice}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39de342d-08ea-4c7e-bd33-b21bc08ede3e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[3]/a",
+      "targets": [
+        ["linkText=Грабни", "linkText"],
+        ["css=.dvvt-btn > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Грабни')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"this.style.cursor='wait';this.onclick=function(){return false;};\"]", "xpath:attributes"],
+        ["xpath=//div[@id='nvp_dealinfo']/div[3]/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/cart/add/08drkd/715369')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Грабни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad824e1b-0389-4500-a878-de2165c7bf7d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return (parseFloat(${tempPrice}) + parseFloat(${totalPrice}));",
+      "targets": [],
+      "value": "totalPrice"
+    }, {
+      "id": "277e64e6-fdf4-488b-a137-2c394125d38d",
+      "comment": "",
+      "command": "echo",
+      "target": "${totalPrice}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "613cc5a0-929a-4cf9-8cc5-b52f0582cbcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5be58376-ada3-4c3b-9b14-5e9b8934e34e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${loopvariable} + 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "3c64f220-1bfd-4b94-ad58-2c0fc686e2a9",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${loopvariable} < ${vouchers}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "845b3353-db8d-432c-8e13-364438c336f9",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c6e27b2-0146-4432-a173-5c2d0f3932a8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nhdr_cartbtn > b",
+      "targets": [
+        ["css=.nhdr_cartbtn > b", "css:finder"],
+        ["xpath=//div[4]/a/span/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Количка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c26c8c45-9ce2-4335-b79f-bd6618cb468d",
+      "comment": "",
+      "command": "echo",
+      "target": "Shopping cart is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce24163b-c691-41ae-be1c-b3558fd27b93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_cartbtn > b",
+      "targets": [
+        ["css=.nhdr_cartbtn > b", "css:finder"],
+        ["xpath=//div[4]/a/span/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Количка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1f3f374-fa5f-4d7f-beb3-6954ef411455",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#cart_header > h1",
+      "targets": [
+        ["css=#cart_header > h1", "css:finder"],
+        ["xpath=//div[@id='cart_header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Количка: 3 ваучера')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf08b160-c9ec-4ae6-abc7-02847ace3c9b",
+      "comment": "",
+      "command": "echo",
+      "target": "The shopping cart is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e74def39-e01b-416e-8a08-37abd87783bd",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=co_w_finalvalue",
+      "targets": [
+        ["id=co_w_finalvalue", "id"],
+        ["css=#co_w_finalvalue", "css:finder"],
+        ["xpath=//div[@id='co_w_finalvalue']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_wallet_final']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div", "xpath:position"]
+      ],
+      "value": "sitePrice"
+    }, {
+      "id": "3988340a-d161-4013-b58f-57506d6a86cb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var str = ${sitePrice}; var tempStr = str.substring(0, str.length-3); return parseFloat(tempStr);",
+      "targets": [],
+      "value": "sitePrice"
+    }, {
+      "id": "cd15a4eb-f8c8-4d31-9b3f-7c860bdd7aa3",
+      "comment": "",
+      "command": "echo",
+      "target": "Calcualted price: ${totalPrice} ,  Site price: ${sitePrice}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a24eb50-64c9-4330-a953-c23b85ea6d1f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var res1 = ${totalPrice}; var res2 = ${sitePrice}; return(res1 == res2)",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "fe3e0f60-8479-42d6-b728-1bbe66d1abee",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }]
+  }, {
+    "id": "60346cc0-f493-4518-9f73-f0828fed59ed",
+    "name": "RemoveCouponFromTheShoppingCart",
+    "commands": [{
+      "id": "3beee540-bc13-492b-8cc9-db34d2c897a0",
+      "comment": "",
+      "command": "open",
+      "target": "/sofia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "000e67b5-3ba4-4d5b-9c2d-d92560297591",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "028ad9ed-0561-4915-abda-0bbc339230d2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nhdr_cartbtn > b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7b4b059-b66b-4e48-8b08-5bd4174a53e3",
+      "comment": "",
+      "command": "echo",
+      "target": "Shopping cart is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e25fb29-c0ae-49ba-b688-4f642f3ce5cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_cartbtn > b",
+      "targets": [
+        ["css=.nhdr_cartbtn > b", "css:finder"],
+        ["xpath=//div[4]/a/span/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Количка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec760a97-9ad7-42ae-b66a-6b65c871ecc0",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"sitebody\"]/div[1]/div[3]/div",
+      "targets": [],
+      "value": "itemsToDelete"
+    }, {
+      "id": "c35bb419-ac34-4b2c-8803-e8d92bb7b591",
+      "comment": "",
+      "command": "echo",
+      "target": "${itemsToDelete}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "657d9222-4500-484b-a902-98a1b2cfea1d",
+      "comment": "",
+      "command": "if",
+      "target": "${itemsToDelete} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fea62f6e-4494-41f1-8850-7c03cf123eae",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "745cedae-1a94-49ec-a84a-a2410024e347",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dca5cd6-a9b8-4330-97dd-7580cfa7331f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"sitebody\"]/div[1]/div[3]/div[${loopvariable}]/div[2]/div[1]/a[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc0b3491-bd70-4136-ad3f-3e59504e4260",
+      "comment": "",
+      "command": "echo",
+      "target": "Delete button is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d972e955-69fc-443a-81cd-a5ef72f4f34c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"sitebody\"]/div[1]/div[3]/div[${loopvariable}]/div[2]/div[1]/a[2]",
+      "targets": [
+        ["linkText=Изтрий", "linkText"],
+        ["css=.cart_item:nth-child(1) .cart_item_controls_del", "css:finder"],
+        ["xpath=//a[@onclick=\"return confirm('Изтриване от количката - Сигурни ли сте?');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/cart/delete/1')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Изтрий')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0339654c-948b-4d73-b555-bc021323db21",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Изтриване от количката - Сигурни ли сте?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea6a791b-ca05-4e37-81e1-5cab812a1894",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aed9a887-d08e-44ec-97d6-78c13728eb2d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${loopvariable} + 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "7fa6e1bf-5b3e-4204-80f7-cc196b54901f",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${loopvariable} <= ${itemsToDelete}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b680a2dd-2f1a-4465-ae0c-d7d746206540",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "66163272-96f3-4b7c-b50c-3b4bae280324",
+    "name": "VignetteInspecting",
+    "commands": [{
+      "id": "c9e4538a-5e12-4a6b-8ac2-861f223be0f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d19a125-57da-4318-b77f-159faa62cb94",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0da0a1c2-987c-4082-ab07-6935995bf150",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nhnvitm_icon_vinetki > span",
+      "targets": [
+        ["css=.nhnvitm_icon_vinetki > span", "css:finder"],
+        ["xpath=//a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Винетки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a7070bd-8779-4d77-b6ac-ea286b8b9b9c",
+      "comment": "",
+      "command": "echo",
+      "target": "Vignette tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86679c72-12e5-4454-9065-05ed8768a9f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhnvitm_icon_vinetki > span",
+      "targets": [
+        ["css=.nhnvitm_icon_vinetki > span", "css:finder"],
+        ["xpath=//a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Винетки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d63d4d38-e918-4f1a-8ed0-fcf7d93387f9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//section[@id='hero-section']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/vinetki/check')]", "xpath:href"],
+        ["xpath=//section/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9388aae-f990-4053-ad16-b65c7c8a6096",
+      "comment": "",
+      "command": "echo",
+      "target": "Vignette page is loaded.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "501df5a0-9bdb-44b3-8d38-39463ff23779",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Провери винетка",
+      "targets": [
+        ["linkText=Провери винетка", "linkText"],
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//section[@id='hero-section']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/vinetki/check')]", "xpath:href"],
+        ["xpath=//section/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Провери винетка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4482238a-d79c-4716-ac16-de4cc6538466",
+      "comment": "",
+      "command": "store",
+      "target": "СВ4662НХ",
+      "targets": [],
+      "value": "plateNumber"
+    }, {
+      "id": "6652583b-ef56-4285-90e9-ce48b4342174",
+      "comment": "",
+      "command": "echo",
+      "target": "Plate number is : ${plateNumber}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7035b237-b71f-44c2-bb3f-c5516fe2379d",
+      "comment": "",
+      "command": "store",
+      "target": "България",
+      "targets": [],
+      "value": "country"
+    }, {
+      "id": "500ec91f-f919-43d2-90b9-448bf26561df",
+      "comment": "",
+      "command": "echo",
+      "target": "Country is : ${country}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14402656-ba9a-4336-b948-3a423a253377",
+      "comment": "",
+      "command": "store",
+      "target": "22080646547402",
+      "targets": [],
+      "value": "vignetteNumber"
+    }, {
+      "id": "dbc9210b-c5a2-4c22-b6f7-d5dc24ba15e6",
+      "comment": "",
+      "command": "select",
+      "target": "id=country",
+      "targets": [],
+      "value": "${country}"
+    }, {
+      "id": "6a09d710-0a6a-4493-aa51-8d422a8e0c5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration",
+      "targets": [
+        ["id=registration", "id"],
+        ["name=LPN", "name"],
+        ["css=#registration", "css:finder"],
+        ["xpath=//input[@id='registration']", "xpath:attributes"],
+        ["xpath=//div[@id='checkVignetteWrp']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab831cff-0028-47ad-aeb2-20399f9b7b5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration",
+      "targets": [
+        ["id=registration", "id"],
+        ["name=LPN", "name"],
+        ["css=#registration", "css:finder"],
+        ["xpath=//input[@id='registration']", "xpath:attributes"],
+        ["xpath=//div[@id='checkVignetteWrp']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${plateNumber}"
+    }, {
+      "id": "3065cd09-c16a-4aa1-b6ee-7a45d769b273",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Провери",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61c47f66-14c3-4aa2-96a2-7c8b1cec664a",
+      "comment": "",
+      "command": "echo",
+      "target": "Check button is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f729b1f3-ecab-4aeb-9230-c114a02c8041",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Провери",
+      "targets": [
+        ["linkText=Провери", "linkText"],
+        ["css=.vinetki_button", "css:finder"],
+        ["xpath=//a[contains(text(),'Провери')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"document.vf.submit(); vinetki_form_onsubmit(document.vf,this); ga('send','event','Vinetki','CheckForm','CheckOnly'); return false;\"]", "xpath:attributes"],
+        ["xpath=//div[@id='checkVignetteWrp']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:;')]", "xpath:href"],
+        ["xpath=//form/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e64d22d0-7d77-4e1f-a8c3-87425bf994cc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"vignette-wrapper\"]/form/div/div[@class='vf-box']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "137d29ad-4dd8-465f-acdb-fe02eee16288",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) b",
+      "targets": [
+        ["css=tr:nth-child(1) b", "css:finder"],
+        ["xpath=//div[@id='vignette-wrapper']/form/div/div/table/tbody/tr/td[2]/b", "xpath:idRelative"],
+        ["xpath=//td[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'21073165811995')]", "xpath:innerText"]
+      ],
+      "value": "vignetteNumberRes"
+    }, {
+      "id": "15285f9c-ea09-4f0d-ba19-dc5be0b2b4ff",
+      "comment": "",
+      "command": "echo",
+      "target": "Actual vignette number is : ${vignetteNumber}. Vignette number from site is : ${vignetteNumberRes}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75f89664-3b92-4122-86a0-f12e764f68f6",
+      "comment": "",
+      "command": "assert",
+      "target": "vignetteNumber",
+      "targets": [],
+      "value": "${vignetteNumberRes}"
+    }]
+  }, {
+    "id": "71dc9b12-3143-4e05-91dc-0d5b76029d85",
+    "name": "ChangeCityInProfile",
+    "commands": [{
+      "id": "9cfbb60b-8535-4a4f-aa5b-38f70f7e59a8",
+      "comment": "",
+      "command": "open",
+      "target": "/sofia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94cba7c9-4eab-4ab4-83ab-55e6d2d201e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2653b952-1f1e-4e3a-8ab7-45d3654e7959",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_user > b",
+      "targets": [
+        ["css=.nhdr_user > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Спас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6120236f-6d64-4528-b490-e48197d110d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.menu_user_profile > b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "031caf1e-a73b-456c-acc9-5068d82309be",
+      "comment": "",
+      "command": "echo",
+      "target": "My profile tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eff9bf80-43e3-4a27-b360-a4c6be6cc983",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu_user_profile > b",
+      "targets": [
+        ["css=.menu_user_profile > b", "css:finder"],
+        ["xpath=//a[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Моят профил')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1a7f1c3-a8b3-47a8-a8f1-8ba64d159928",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#profile_edit > b",
+      "targets": [
+        ["css=#profile_edit > b", "css:finder"],
+        ["xpath=//a[@id='profile_edit']/b", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/b", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6ef591c-0e5a-4aac-8f26-caee1ac692b0",
+      "comment": "",
+      "command": "echo",
+      "target": "Profile edit tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7d469cf-0ec3-45ff-b737-9076d63ed9af",
+      "comment": "",
+      "command": "click",
+      "target": "css=#profile_edit > b",
+      "targets": [
+        ["css=#profile_edit > b", "css:finder"],
+        ["xpath=//a[@id='profile_edit']/b", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/b", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54c82c9d-b936-4455-bcbd-922ffa3730c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=#newsettings_nav > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54455cf4-b025-4cfd-8263-20a69a9778ac",
+      "comment": "",
+      "command": "store",
+      "target": "София",
+      "targets": [],
+      "value": "city"
+    }, {
+      "id": "0835f20e-4342-496a-b8b9-465a9115a742",
+      "comment": "",
+      "command": "click",
+      "target": "name=real_city_id",
+      "targets": [
+        ["name=real_city_id", "name"],
+        ["css=tr:nth-child(4) select", "css:finder"],
+        ["xpath=//select[@name='real_city_id']", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[4]/td[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4ebeb4-d0ff-4132-a235-c85781513814",
+      "comment": "",
+      "command": "select",
+      "target": "name=real_city_id",
+      "targets": [],
+      "value": "${city}"
+    }, {
+      "id": "c4a431b8-2230-44ae-97d8-7be6a92999e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn > b",
+      "targets": [
+        ["css=.accountbtn > b", "css:finder"],
+        ["xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b", "xpath:idRelative"],
+        ["xpath=//td[2]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Запази')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "438e2cc4-bed5-4e22-9da7-365f5ad86e9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90caf369-551e-46f2-b1ff-6377f0e7578b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_user > b",
+      "targets": [
+        ["css=.nhdr_user > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Спас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11821229-cf0f-4792-bfc8-db449896dee2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Моят профил",
+      "targets": [
+        ["linkText=Моят профил", "linkText"],
+        ["css=.menu_user_profile", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/members/1356367')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Моят профил')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80ba37c4-205c-421f-b460-bf007d3db594",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=profile_usermeta",
+      "targets": [
+        ["id=profile_usermeta", "id"],
+        ["css=#profile_usermeta", "css:finder"],
+        ["xpath=//div[@id='profile_usermeta']", "xpath:attributes"],
+        ["xpath=//div[@id='profile_right']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc677f0b-a34d-4cc8-9560-ca3c844464d7",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=profile_usermeta",
+      "targets": [
+        ["id=profile_usermeta", "id"],
+        ["css=#profile_usermeta", "css:finder"],
+        ["xpath=//div[@id='profile_usermeta']", "xpath:attributes"],
+        ["xpath=//div[@id='profile_right']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "cityRes"
+    }, {
+      "id": "1ac9b3e9-bfa2-4278-be77-3d4fbf3b39d5",
+      "comment": "",
+      "command": "echo",
+      "target": "The city we want to set : ${city} , The actual city : ${cityRes};",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47cad0c3-6186-499e-b79c-d0373b4b449e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var t = ${cityRes}; var str = ${city}; return t.includes(str);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "2fdb51ef-f364-494f-9a34-ec5a66b642b4",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }]
+  }, {
+    "id": "9d8b9a25-7a85-465e-99cc-e5cb7934a4fe",
+    "name": "CouponSortingByLocation",
+    "commands": [{
+      "id": "a7841b37-d03c-4cad-bce1-f89e2f53d2dc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93e36f88-a458-4448-8731-36ad3e24e1c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15986ece-7f66-47d8-8a53-8d4bd06cb0cc",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[2]/div/div/div/a",
+      "targets": [],
+      "value": "locationCount"
+    }, {
+      "id": "e07e69ba-55b9-4528-bbd3-c364af5d8d8e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 2",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "f6020dc5-db1e-476e-a331-87e4e895bb0b",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1f789cf-692a-4857-a0e5-5f5a6ec70c76",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[2]/div/div/div/a[${loopvariable}]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a07057ac-0ec7-4c81-afaf-cbefc39588ea",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"sitebody\"]/div/div[1]/div[2]/div/div/div/a[${loopvariable}]",
+      "targets": [],
+      "value": "currentLoc"
+    }, {
+      "id": "ffa4ecf1-3f77-41d0-b2cb-bdc5a0277215",
+      "comment": "",
+      "command": "echo",
+      "target": "Current location: ${currentLoc} is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e383ac28-fd63-4c23-81ae-3adecfa1463e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[2]/div/div/div/a[${loopvariable}]",
+      "targets": [
+        ["linkText=Център", "linkText"],
+        ["css=.tabElement:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Център')]", "xpath:link"],
+        ["xpath=//div[@id='sitebody']/div/div/div[2]/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia/section:450')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Център')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7cb97ed-b0a3-4597-bd18-8dfa7e75088f",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"sidedeals_cnt\"]/div/div/div",
+      "targets": [],
+      "value": "vouchers"
+    }, {
+      "id": "e8d06582-ee5a-41da-aaa0-a0bda120ea39",
+      "comment": "",
+      "command": "echo",
+      "target": "There are ${vouchers} vouchers present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da3b69f4-2ab0-4568-9a6f-f9e4e168812d",
+      "comment": "",
+      "command": "if",
+      "target": "${vouchers} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b2351e6-f0e8-4c1b-aa7f-8ece34bd0216",
+      "comment": "",
+      "command": "click",
+      "target": "css=.br_deal:nth-child(1) .br_deal_pic_bord",
+      "targets": [
+        ["css=.br_deal:nth-child(1) .br_deal_pic_bord", "css:finder"],
+        ["xpath=//div[@id='sidedeals_cnt']/div/div/div/div/a[2]/em", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/a[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4283caa4-1111-4671-a927-6060d78a6d3d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nvp_mapbox_extra > b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30cc51dc-4077-4376-bbcf-8ac5699c8f18",
+      "comment": "",
+      "command": "echo",
+      "target": "This voucher has an address specified.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe5288ad-edfc-484a-b4e2-f78022d5c0dc",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.nvp_mapbox_extra > b",
+      "targets": [
+        ["css=.nvp_mapbox_extra > b", "css:finder"],
+        ["xpath=//div[@id='dv3_right']/div[3]/div[2]/div/div/strong/b", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/strong/b", "xpath:position"],
+        ["xpath=//b[contains(.,'София, кв. Лозенец, бул. Арсеналски 5, етаж 4')]", "xpath:innerText"]
+      ],
+      "value": "voucherLoc"
+    }, {
+      "id": "06e961ac-abc1-4e9a-bf60-b01caa0fafc0",
+      "comment": "",
+      "command": "echo",
+      "target": "The current category location is : ${currentLoc} , The voucher's location is : ${voucherLoc}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca20e4d5-8629-436d-a5bd-66c855248d75",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var t = ${voucherLoc}; var res = ${currentLoc}; return t.includes(res);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "95cecbed-99b7-4a4b-8e04-a41f8ee8d3be",
+      "comment": "",
+      "command": "verify",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "d07c1552-ac45-4a01-9bf3-6c0047d08dfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c52edc-b16f-4218-bc79-ceb1b5810f89",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1c615e5-2332-4fa3-bca3-606041f978a4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${loopvariable} + 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "23930652-ea6b-4ff8-b708-57745259d7a9",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${loopvariable} <= ${locationCount}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "396ac904-6054-474a-98cd-67222239cea5",
+    "name": "VehicleSection",
+    "commands": [{
+      "id": "460a4e32-7948-4bd6-b101-c7cbcfe55804",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3804a57-c7f0-455c-b279-edcc7e77b978",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "910aee7a-acba-4322-956e-9c5f01928b11",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.rdsgn_rnavitem:nth-child(11) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(11) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[11]/strong", "xpath:idRelative"],
+        ["xpath=//a[11]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'За автомобила')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6295c89-29be-4721-9a78-a77b6bf776c9",
+      "comment": "",
+      "command": "echo",
+      "target": "The vehicle category is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63f38f1e-50a3-4147-ac44-eea60d1549a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(11) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(11) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[11]/strong", "xpath:idRelative"],
+        ["xpath=//a[11]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'За автомобила')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcc74b4a-dbdc-4ae1-b6c0-4845a5a07899",
+      "comment": "",
+      "command": "echo",
+      "target": "The vehicle category page is loaded.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83303ec5-1d71-43c9-98eb-3ca422ef37fa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.deals_browse_subcats",
+      "targets": [
+        ["css=.deals_browse_subcats", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "478a1736-af6c-4cf8-be27-a61c8d448fbe",
+      "comment": "",
+      "command": "echo",
+      "target": "The vehicle subcategories are present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "079bcddf-1c97-49f2-9686-eb288364871c",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"sitebody\"]/div/div[1]/div[3]/a",
+      "targets": [],
+      "value": "allCats"
+    }, {
+      "id": "391fa94d-3c60-43e3-b20e-d721228b9658",
+      "comment": "",
+      "command": "echo",
+      "target": "There are ${allCats} vehichle subcategories, including \"All subcategories\".",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b59ab209-7fa9-45ae-bc53-000e7bff2946",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 2",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "aa82eb98-f01f-417d-a15c-a756ebb53f62",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d2e9a17-f4f1-4f21-99bf-15354ffc711e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [
+        ["linkText=Измиване и почистване", "linkText"],
+        ["css=.item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia/za-avtomobila/izmivane-i-pochistvane')]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Измиване и почистване')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1966478-2072-4b35-a038-54c5cf728df1",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [
+        ["linkText=Измиване и почистване", "linkText"],
+        ["css=.item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia/za-avtomobila/izmivane-i-pochistvane')]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Измиване и почистване')]", "xpath:innerText"]
+      ],
+      "value": "currentCat"
+    }, {
+      "id": "6e7fe00e-0491-4af8-8ef2-18c370a0671a",
+      "comment": "",
+      "command": "echo",
+      "target": "${currentCat} category is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc43ec61-30cb-45ba-a36d-15c540e2fd69",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [
+        ["linkText=Измиване и почистване", "linkText"],
+        ["css=.item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia/za-avtomobila/izmivane-i-pochistvane')]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Измиване и почистване')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc967b36-af49-4f1a-9876-d9d89ebf0cc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.br_deal:nth-child(1) .br_deal_pic_bord",
+      "targets": [
+        ["css=.br_deal:nth-child(1) .br_deal_pic_bord", "css:finder"],
+        ["xpath=//div[@id='sidedeals_cnt']/div/div/div/div/a[2]/em", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/a[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d14b11a-c84a-438f-98cc-b34f595828ad",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(.,'Грабни')]",
+      "targets": [
+        ["linkText=Грабни", "linkText"],
+        ["css=.dvvt-btn > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Грабни')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"this.style.cursor='wait';this.onclick=function(){return false;};\"]", "xpath:attributes"],
+        ["xpath=//div[@id='nvp_dealinfo']/div[3]/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/cart/add/05qvn49/714378')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Грабни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "752c3619-4856-4f38-8597-77337b2cae45",
+      "comment": "",
+      "command": "echo",
+      "target": "The first voucher is opened.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eff9ba7a-5215-4a32-9173-616db56d92f9",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.vppath_step:nth-child(4) .vppath_step_main > span",
+      "targets": [
+        ["css=.vppath_step:nth-child(4) .vppath_step_main > span", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div[2]/div[3]/span/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span/a/span", "xpath:position"]
+      ],
+      "value": "resCat"
+    }, {
+      "id": "568054a7-8d8a-4942-85f9-ac42536d9ac7",
+      "comment": "",
+      "command": "echo",
+      "target": "The displayed voucher's category is ${resCat}, the selected category is : ${currentCat}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "244949e3-5efd-4b14-9853-ad5e2e03d5e8",
+      "comment": "",
+      "command": "verify",
+      "target": "currentCat",
+      "targets": [],
+      "value": "${resCat}"
+    }, {
+      "id": "38cad036-2396-4a96-9eb3-ad12a08dad16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d95a1d6-241c-4b52-b370-3534d88b469c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(11) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(11) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[11]/strong", "xpath:idRelative"],
+        ["xpath=//a[11]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'За автомобила')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "423edb4c-892c-43c5-87d2-bf3114ac4afe",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${loopvariable} + 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "91466112-c4c0-415d-a0dc-9076e5d46a72",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${loopvariable} <= ${allCats}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "89c9eb1e-a168-4942-8b95-f319043a0965",
+    "name": "BeautySection",
+    "commands": [{
+      "id": "d0961536-61b8-4bf0-90e7-c3429a474d71",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "576b34d9-1db1-480f-968b-551090903e39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ea9622f-3cea-4b04-b9cf-5af79bb954f4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.selected > strong:nth-child(3)",
+      "targets": [
+        ["css=.selected > strong:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/div/a/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Красота')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1939a42-8dad-4e8b-80e9-5d4887035516",
+      "comment": "",
+      "command": "echo",
+      "target": "The beauty category is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6461c9ba-8c5d-4f00-bf29-c2eb78d6c974",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(4) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(4) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[4]/strong", "xpath:idRelative"],
+        ["xpath=//a[4]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Красота')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4ec892c-da9a-4d49-882c-362c6a1f8fc2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1[contains(.,'Красота')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ddc9b8e-b608-473d-a6bb-5d35ef82d5b2",
+      "comment": "",
+      "command": "echo",
+      "target": "The beauty category is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37716b19-57e9-4274-a2f7-5e81344a7f75",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.deals_browse_subcats",
+      "targets": [
+        ["css=.deals_browse_subcats", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9366bfb4-981b-4b28-801b-55de3b7d6f47",
+      "comment": "",
+      "command": "echo",
+      "target": "The subcategory bar is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40603948-19e5-44bc-89cd-916ebfde9675",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a",
+      "targets": [],
+      "value": "allCats"
+    }, {
+      "id": "cd9e05c4-3a3b-4f41-be2c-df172d6a48ff",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 2",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "4aaea538-8cf1-4034-a551-7bbcf93b5031",
+      "comment": "",
+      "command": "echo",
+      "target": "There are ${allCats} subcategories in the Beauty category.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38958ee4-f9f9-409d-8df7-ec33a091c344",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbc56458-5b86-469c-b149-ad61bc62a262",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db9b2600-7cbf-44ae-b47c-26713e955cdc",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [],
+      "value": "currCat"
+    }, {
+      "id": "2a9f9b57-ba74-4c94-84d5-2b89024fad66",
+      "comment": "",
+      "command": "echo",
+      "target": "The current subcategory  ${currCat} is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4de64705-d14c-4c53-a9ad-a37b0cffb51a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[3]/a[${loopvariable}]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd68aec9-7973-43b0-9105-cab8fbabef37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.br_deal:nth-child(1) .br_deal_pic_bord",
+      "targets": [
+        ["css=.br_deal:nth-child(1) .br_deal_pic_bord", "css:finder"],
+        ["xpath=//div[@id='sidedeals_cnt']/div/div/div/div/a[2]/em", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/a[2]/em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec11ddc7-afb2-4ba8-9560-f9241116dc50",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(.,'Грабни')]",
+      "targets": [
+        ["linkText=Грабни", "linkText"],
+        ["css=.dvvt-btn > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Грабни')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"this.style.cursor='wait';this.onclick=function(){return false;};\"]", "xpath:attributes"],
+        ["xpath=//div[@id='nvp_dealinfo']/div[3]/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/cart/add/0qdu2sh/715837')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Грабни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1ef9d29-f1bc-46f6-8860-6015a52f5864",
+      "comment": "",
+      "command": "echo",
+      "target": "The voucher page is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29d8c11b-a75f-4ea4-a612-66b0b9d2bbf1",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.vppath_step:nth-child(3) .vppath_step_main > span",
+      "targets": [
+        ["css=.vppath_step:nth-child(4) .vppath_step_main > span", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div[2]/div[3]/span/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span/a/span", "xpath:position"]
+      ],
+      "value": "resCat"
+    }, {
+      "id": "d5f4cd80-33b8-4d4a-ab70-79ca142af537",
+      "comment": "",
+      "command": "echo",
+      "target": "The selected category is ${currCat}, The displayed category in the voucher's page is ${resCat}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9195396b-cc52-415b-981c-1a0e2fc87495",
+      "comment": "",
+      "command": "verify",
+      "target": "currCat",
+      "targets": [],
+      "value": "${resCat}"
+    }, {
+      "id": "42ca67a5-887f-4916-9061-e52ea55fe69f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${loopvariable} + 1",
+      "targets": [],
+      "value": "loopvariable"
+    }, {
+      "id": "7737aa57-9d6e-483b-b383-3bb0852008b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b02308c0-aa4d-49be-adbd-4175e456ea68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rdsgn_rnavitem:nth-child(4) > strong",
+      "targets": [
+        ["css=.rdsgn_rnavitem:nth-child(4) > strong", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div[3]/div/div/div/a[4]/strong", "xpath:idRelative"],
+        ["xpath=//a[4]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Красота')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f07a14b-180b-4706-ae93-1208d6fe5b48",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${loopvariable} <= ${allCats}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6bcfad9f-f7cf-4be5-94b5-f7a33b5895d1",
+    "name": "AddFavoriteLocation",
+    "commands": [{
+      "id": "0d66fbf7-96cf-4a8b-bfed-b8c5f7b92438",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97747033-602e-45ef-b5e0-896f9045015f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d8bfaae-dcf2-4a22-afcd-f87988645f55",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Места",
+      "targets": [
+        ["linkText=Места", "linkText"],
+        ["css=.nhnvitm_icon_places", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/places')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Места')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad5cd460-6cf9-45cb-aa01-f0dc952ef1fe",
+      "comment": "",
+      "command": "echo",
+      "target": "The location tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31bd56ac-ab97-480e-b028-1dd8fc6a6918",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Места",
+      "targets": [
+        ["linkText=Места", "linkText"],
+        ["css=.nhnvitm_icon_places", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/places')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Места')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f48634-9ed8-48a3-97cc-f10c09bbfeb9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1[contains(.,'Търговски обекти в София')]",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Търговски обекти в София')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "125674a6-419c-4f0a-8edc-05a25e2f7f77",
+      "comment": "",
+      "command": "echo",
+      "target": "The location page is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6efd5e7b-bad2-4c21-ba3c-1eec620717ac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[2]/div/div[2]/a[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "352f4e89-c283-4189-9fd0-c928655f7bf8",
+      "comment": "",
+      "command": "echo",
+      "target": "A location is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "189a1563-afef-4b73-a9a7-e1679f4e51e5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div[2]/a[2]",
+      "targets": [
+        ["linkText=CyberHub VR", "linkText"],
+        ["css=.bprofile_listitem:nth-child(1) .bprofile_lname:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'CyberHub VR')]", "xpath:link"],
+        ["xpath=//div[@id='sitebody']/div/div[2]/div[3]/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/places/cyberhub-vr')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'CyberHub VR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "084f3a60-93cf-459c-b253-1e0ec5f6051b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=bpprofile_friendme",
+      "targets": [
+        ["id=bpprofile_friendme", "id"],
+        ["linkText=Добави в любими", "linkText"],
+        ["css=#bpprofile_friendme", "css:finder"],
+        ["xpath=//a[@id='bpprofile_friendme']", "xpath:attributes"],
+        ["xpath=//div[@id='bpprofilebtns']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[12]", "xpath:href"],
+        ["xpath=//main/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Добави в любими')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79c8cc9f-d3f3-417f-bf66-e170502dfac4",
+      "comment": "",
+      "command": "echo",
+      "target": "The location page is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f91800af-838b-4f67-ba5a-920ad0c77c20",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "locUrl"
+    }, {
+      "id": "d2c8880f-6890-4419-b84b-8c08e150efae",
+      "comment": "",
+      "command": "echo",
+      "target": "url ${locUrl}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91b6b4aa-a795-484f-a695-101c73c2ec95",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var t = ${locUrl}; return (t.substring(16, t.length));",
+      "targets": [],
+      "value": "locUrl"
+    }, {
+      "id": "526b2dc3-c669-4ddc-a4ee-01c7402284a5",
+      "comment": "",
+      "command": "echo",
+      "target": "Location's page url: ${locUrl}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e131b50-386e-4bb2-8c3a-2bcf0efc9be3",
+      "comment": "",
+      "command": "click",
+      "target": "id=bpprofile_friendme",
+      "targets": [
+        ["id=bpprofile_friendme", "id"],
+        ["linkText=Добави в любими", "linkText"],
+        ["css=#bpprofile_friendme", "css:finder"],
+        ["xpath=//a[@id='bpprofile_friendme']", "xpath:attributes"],
+        ["xpath=//div[@id='bpprofilebtns']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[12]", "xpath:href"],
+        ["xpath=//main/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Добави в любими')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bae5162-0e0b-4883-8ab2-7f09dc7cd9a8",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=business_name",
+      "targets": [
+        ["id=business_name", "id"],
+        ["linkText=CyberHub VR", "linkText"],
+        ["css=#business_name", "css:finder"],
+        ["xpath=//a[contains(text(),'CyberHub VR')]", "xpath:link"],
+        ["xpath=//a[@id='business_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sitebody']/div/main/div/h1/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/places/cyberhub-vr')])[12]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CyberHub VR')]", "xpath:innerText"]
+      ],
+      "value": "locNamePage"
+    }, {
+      "id": "f74d063c-49aa-4f83-a7f6-de8b6d81abeb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ae8609a-5f45-4337-aec1-091ae656b796",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_user > b",
+      "targets": [
+        ["css=.nhdr_user > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Спас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66dcc0cb-3c05-4053-acd0-ef900c9c2371",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu_user_profile > b",
+      "targets": [
+        ["css=.menu_user_profile > b", "css:finder"],
+        ["xpath=//a[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Моят профил')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12504abc-e93c-4b7c-87ec-fdd79aa52e93",
+      "comment": "",
+      "command": "click",
+      "target": "css=#profilenav > a:nth-child(5) > b",
+      "targets": [
+        ["css=#profilenav > a:nth-child(5) > b", "css:finder"],
+        ["xpath=//div[@id='profilenav']/a[5]/b", "xpath:idRelative"],
+        ["xpath=//div[3]/a[5]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Места')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc5e065d-2450-481a-8476-44a8b1d6018e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='profile_right']/div[4]/div",
+      "targets": [
+        ["css=.bpmlt-item-18714", "css:finder"],
+        ["xpath=//div[@id='profile_right']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "115e66d4-2d1f-447f-9416-f95bcb373683",
+      "comment": "",
+      "command": "echo",
+      "target": "A location has been added to favorites.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "093ff0d6-cc85-4983-ab50-c8ce76912a88",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"profile_right\"]/div[4]/div[1]/div[2]/a",
+      "targets": [],
+      "value": "locNameFavorites"
+    }, {
+      "id": "18e43cd8-992c-4057-8cac-75b7af821140",
+      "comment": "",
+      "command": "echo",
+      "target": "The location's name from the page is ${locNamePage}, The location name from the favorites tab is ${locNameFavorites}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ba29b92-3cb8-4b82-9f73-90fd40cf2972",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(@href, '${locUrl}')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52d90e87-fe0b-4987-8885-3f919eb6ef81",
+      "comment": "",
+      "command": "echo",
+      "target": "The location's page url matches with the location's url from the favorites tab.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7b4f98b-0acf-417d-b5df-8a4ecbdf5461",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '${locUrl}')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d9d42a5-aa57-45c1-8899-686202752d2a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=business_name",
+      "targets": [
+        ["id=business_name", "id"],
+        ["linkText=Студио Tattoo M³", "linkText"],
+        ["css=#business_name", "css:finder"],
+        ["xpath=//a[contains(text(),'Студио Tattoo M³')]", "xpath:link"],
+        ["xpath=//a[@id='business_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sitebody']/div/main/div/h1/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/places/studio-tattoo-m')])[12]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Студио Tattoo M³')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b7f323b-ff1b-484a-ae71-c28807fca486",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=business_name",
+      "targets": [
+        ["id=business_name", "id"],
+        ["linkText=Студио Tattoo M³", "linkText"],
+        ["css=#business_name", "css:finder"],
+        ["xpath=//a[contains(text(),'Студио Tattoo M³')]", "xpath:link"],
+        ["xpath=//a[@id='business_name']", "xpath:attributes"],
+        ["xpath=//div[@id='sitebody']/div/main/div/h1/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/places/studio-tattoo-m')])[12]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Студио Tattoo M³')]", "xpath:innerText"]
+      ],
+      "value": "locNameFavorites"
+    }, {
+      "id": "71ba6cd7-9cb6-487b-938d-2d08d8e0e012",
+      "comment": "",
+      "command": "echo",
+      "target": "The name of the location we wanted to add : ${locNamePage}, The name of the location we added in favorites : ${locNameFavorites}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8a5826e-270e-42da-951d-fd2106e8e301",
+      "comment": "",
+      "command": "verify",
+      "target": "locNamePage",
+      "targets": [],
+      "value": "${locNameFavorites}"
+    }]
+  }, {
+    "id": "938cee5f-56e0-439c-b20a-4256bb526247",
+    "name": "DeleteFavoriteLocation",
+    "commands": [{
+      "id": "f9dc5620-0813-425c-8e06-fe4247c78e81",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2364d6bb-56d1-4ca1-a934-c2d1ef4b797f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cf612e4-1453-4c57-b574-81aed47bba92",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nhdr_user > em",
+      "targets": [
+        ["css=.nhdr_user > em", "css:finder"],
+        ["xpath=//em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "333c09c4-617c-4e38-9c77-d142e2f98717",
+      "comment": "",
+      "command": "echo",
+      "target": "The profile tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f3577c6-e063-42e1-95dc-fb67a33b2123",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_user > em",
+      "targets": [
+        ["css=.nhdr_user > em", "css:finder"],
+        ["xpath=//em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08836ad7-121b-49c0-a7b1-c692c2214ecd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Моят профил",
+      "targets": [
+        ["linkText=Моят профил", "linkText"],
+        ["css=.menu_user_profile", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/members/1356367')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Моят профил')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64992b57-e985-4938-9a72-100e9e5cbb62",
+      "comment": "",
+      "command": "echo",
+      "target": "My profile tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1877c41-3207-41ee-8651-34514f81dc63",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Моят профил",
+      "targets": [
+        ["css=.menu_user_profile > b", "css:finder"],
+        ["xpath=//a[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Моят профил')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed868caa-dfcd-46de-93ed-9fa2bfe65932",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//b[contains(.,'Места')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fee71cf8-593e-4190-8428-0125f99a458a",
+      "comment": "",
+      "command": "echo",
+      "target": "Favorite location tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c62472b5-7846-4afd-bc93-e49df12c99aa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//b[contains(.,'Места')]",
+      "targets": [
+        ["css=#profilenav > a:nth-child(2) > b", "css:finder"],
+        ["xpath=//div[@id='profilenav']/a[2]/b", "xpath:idRelative"],
+        ["xpath=//div[3]/a[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Места')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb308ca1-ee60-4b57-bcd9-f18033a664c3",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='profile_right']/div[4]/div/div[2]/a",
+      "targets": [
+        ["linkText=CyberHub VR", "linkText"],
+        ["css=.bpmlt-item-18714 > .bpmlt-txt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CyberHub VR')]", "xpath:link"],
+        ["xpath=//div[@id='profile_right']/div[4]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/places/cyberhub-vr')]", "xpath:href"],
+        ["xpath=//div[4]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CyberHub VR')]", "xpath:innerText"]
+      ],
+      "value": "removedLoc"
+    }, {
+      "id": "d820be75-cd82-453d-94d9-e798f6b66777",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='profile_right']/div[4]/div/div",
+      "targets": [
+        ["css=.bpmlt-item-18714 > .userprofile_delplaces", "css:finder"],
+        ["xpath=//div[@onclick=\"if(confirm('Потвърди изтриване от Места')) { site_unbecome_fan_businessprofile(18714);};return false;\"]", "xpath:attributes"],
+        ["xpath=//div[@id='profile_right']/div[4]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef7789c5-45e2-4f01-afec-ce777be59a16",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95b61186-2a65-4032-ad31-805b8713f475",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bpmlt-item-18826 > .userprofile_delplaces",
+      "targets": [
+        ["css=.bpmlt-item-18826 > .userprofile_delplaces", "css:finder"],
+        ["xpath=//div[@onclick=\"if(confirm('Потвърди изтриване от Места')) { site_unbecome_fan_businessprofile(18826);};return false;\"]", "xpath:attributes"],
+        ["xpath=//div[@id='profile_right']/div[4]/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca8fa769-4afc-4e69-b1ea-82cda744184d",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Потвърди изтриване от Места",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75bae18c-bb2d-4e67-a6dc-45ad5b2bd846",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f553f116-8522-495d-9b9a-56b3423697a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "526f5789-3e6f-485c-bd1f-567d0314bafa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_user > em",
+      "targets": [
+        ["css=.nhdr_user > em", "css:finder"],
+        ["xpath=//em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7e6247e-3e79-4a5d-8e36-53ec46a596bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Моят профил",
+      "targets": [
+        ["linkText=Моят профил", "linkText"],
+        ["css=.menu_user_profile", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/members/1356367')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Моят профил')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2926807d-f412-4f96-a404-082dd5bbe3ed",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//b[contains(.,'Места')]",
+      "targets": [
+        ["css=#profilenav > a:nth-child(2) > b", "css:finder"],
+        ["xpath=//div[@id='profilenav']/a[2]/b", "xpath:idRelative"],
+        ["xpath=//div[3]/a[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Места')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c246e032-b434-4cbc-a66b-f998068e417b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(.,'${removedLoc}')]",
+      "targets": [
+        ["linkText=CyberHub VR", "linkText"],
+        ["css=.bpmlt-item-18714 > .bpmlt-txt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CyberHub VR')]", "xpath:link"],
+        ["xpath=//div[@id='profile_right']/div[4]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/places/cyberhub-vr')]", "xpath:href"],
+        ["xpath=//div[4]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CyberHub VR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3afc0933-c3c3-46e7-bda8-66c53d15a954",
+    "name": "WriteCommentinTheBlog",
+    "commands": [{
+      "id": "e04d705f-06e2-48b1-9f3c-c43016afbe20",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ea44189-dbb5-4c2e-be89-a866afcebf0e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "892x895",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff464c48-d6c1-4816-8a10-1b571b3c14bf",
+      "comment": "",
+      "command": "store",
+      "target": "https://grabo.bg/members/1356367",
+      "targets": [],
+      "value": "profileUrl"
+    }, {
+      "id": "6e60e009-2b3c-47e0-99c2-e08d65c18057",
+      "comment": "",
+      "command": "store",
+      "target": "I really like this article!",
+      "targets": [],
+      "value": "comment"
+    }, {
+      "id": "2949a8cb-bdc7-40a3-9f60-d10cc0143d34",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Блог",
+      "targets": [
+        ["linkText=Блог", "linkText"],
+        ["css=.nhnvitm_icon_blog", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/blog')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2caa3200-e64a-4ea0-bf05-e1ac89018818",
+      "comment": "",
+      "command": "echo",
+      "target": "Blog tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72814dde-5558-4bb7-9107-273589a1413c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Блог",
+      "targets": [
+        ["linkText=Блог", "linkText"],
+        ["css=.nhnvitm_icon_blog", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/blog')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0ebd33b-50b9-47a2-a84d-36fd16c047de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Отбелязваме Деня на християнското семейство",
+      "targets": [
+        ["linkText=Отбелязваме Деня на християнското семейство", "linkText"],
+        ["css=.blog-post:nth-child(3) .blog-post-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Отбелязваме Деня на християнското семейство')]", "xpath:link"],
+        ["xpath=//div[@id='sitebody']/div/div/div[2]/div[3]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/blog/post/157')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Отбелязваме Деня на християнското семейство')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "339538b4-0be7-4a12-87af-59e2cd2149c4",
+      "comment": "",
+      "command": "store",
+      "target": "https://grabo.bg/blog/post/157",
+      "targets": [],
+      "value": "articleUrlTemplate"
+    }, {
+      "id": "af62e82d-2ffb-466a-ae4d-5e506aa3177e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var articleUrl = window.location.href; var temp = ${articleUrlTemplate}; return articleUrl.includes(temp);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "9f346167-5113-4d35-9a08-0169f19619d7",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "c380038a-5f72-4a20-a631-9d9402a67de0",
+      "comment": "",
+      "command": "echo",
+      "target": "The article page is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d53f220d-9f90-44dc-ae2e-eb286dc5f18c",
+      "comment": "",
+      "command": "click",
+      "target": "name=comment",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d82132be-8916-402a-b9ed-1590fb1ae1e7",
+      "comment": "",
+      "command": "type",
+      "target": "name=comment",
+      "targets": [],
+      "value": "${comment}"
+    }, {
+      "id": "0247908a-d47e-40c3-aeec-3c7c3a084c3a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div[2]/div/div/div[2]/form/button/b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bb5c436-203e-4158-a392-d3b8e0c6d287",
+      "comment": "",
+      "command": "echo",
+      "target": "Add comment button is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da4c312b-80d3-4032-bfa6-be94bb9b38d0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div[2]/div/div/div[2]/form/button/b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d30d935a-2a54-48be-a256-b9d4873081c4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"sitebody\"]/div[2]/div[1]/div[1]/div[2]//a[@href=\"${profileUrl}\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6c93a73-a4cd-4849-9620-440642a4cea6",
+      "comment": "",
+      "command": "echo",
+      "target": "A comment from our profile has been posted.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c4abc8ab-45b3-46d9-92d4-b4fa61bf0c44",
+    "name": "LikeArticleInTheBlog",
+    "commands": [{
+      "id": "c85f7faf-6433-4856-ba69-7a7cbb13f186",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf53b37a-3914-4155-bc45-750751daadb4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebc6971e-6fa9-4e0c-a602-e4d354495305",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(.,'Блог')]",
+      "targets": [
+        ["linkText=Блог", "linkText"],
+        ["css=.nhnvitm_icon_blog", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/blog')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53e6371b-d226-46ef-8f59-65296cd11bf4",
+      "comment": "",
+      "command": "echo",
+      "target": "The blog tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5baff3d-9c06-4409-a846-e65d9e160447",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Блог')]",
+      "targets": [
+        ["linkText=Блог", "linkText"],
+        ["css=.nhnvitm_icon_blog", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/blog')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ec4be44-e53b-4b00-bd04-6b60e0f640a8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[2]/div/div[2]/div/a",
+      "targets": [
+        ["linkText=За тайнството и традициите на Бъдната вечер", "linkText"],
+        ["css=.blog-post:nth-child(1) .blog-post-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'За тайнството и традициите на Бъдната вечер')]", "xpath:link"],
+        ["xpath=//div[@id='sitebody']/div/div/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/blog/post/129')])[8]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc7b2ea0-0187-45fa-acc9-f1ca8ece2e07",
+      "comment": "",
+      "command": "echo",
+      "target": "There is at least one article.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d54289c-68dc-4c0d-a6c9-83bbe4454da3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[2]/div/div[2]/div/a",
+      "targets": [
+        ["linkText=За тайнството и традициите на Бъдната вечер", "linkText"],
+        ["css=.blog-post:nth-child(1) .blog-post-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'За тайнството и традициите на Бъдната вечер')]", "xpath:link"],
+        ["xpath=//div[@id='sitebody']/div/div/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/blog/post/129')])[8]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2b28f08-e723-4394-ae9e-7b8362099a02",
+      "comment": "",
+      "command": "store",
+      "target": "https://grabo.bg/blog/post",
+      "targets": [],
+      "value": "articleUrlTemplate"
+    }, {
+      "id": "c9bfea3e-f620-4769-a874-becde4a1e1f9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var articleUrl = window.location.href; var temp = ${articleUrlTemplate}; return articleUrl.includes(temp);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "45dafeb3-2453-4b0f-a6c4-70506a794062",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "afcbff75-c852-4a42-81f8-0349e64e948f",
+      "comment": "",
+      "command": "echo",
+      "target": "The article page is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30860059-b48c-4012-a7ee-7b3b028df4ba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//a[contains(text(),'Харесва ми!')])[2]",
+      "targets": [
+        ["linkText=Харесва ми!", "linkText"],
+        ["css=.blog_flybar_right:nth-child(1) > .blog_flybar_like", "css:finder"],
+        ["xpath=(//a[contains(text(),'Харесва ми!')])[2]", "xpath:link"],
+        ["xpath=(//a[@onclick='like_blog_post()'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='sitebody']/div[2]/div/div/div/div[2]/div/span/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[3]", "xpath:href"],
+        ["xpath=//span/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f62ef605-2fc3-4d5f-9214-af4ecd79e3eb",
+      "comment": "",
+      "command": "echo",
+      "target": "The like button is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b6e4690-3b02-475d-a2a2-b4b6ca7a2648",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.blog_flybar_right:nth-child(1) .blog_post_likes_count",
+      "targets": [
+        ["css=.blog_flybar_right:nth-child(1) .blog_post_likes_count", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div[2]/div/div/div/div[2]/div/span/div/span/font", "xpath:idRelative"],
+        ["xpath=//span/div/span/font", "xpath:position"]
+      ],
+      "value": "priorLikeCount"
+    }, {
+      "id": "336be010-35db-4921-8be2-d5782993817f",
+      "comment": "",
+      "command": "echo",
+      "target": "The amount of likes before we like is ${priorLikeCount}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce01f03d-656b-4145-afe3-849724f5db66",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Харесва ми!')])[2]",
+      "targets": [
+        ["linkText=Харесва ми!", "linkText"],
+        ["css=.blog_flybar_right:nth-child(1) > .blog_flybar_like", "css:finder"],
+        ["xpath=(//a[contains(text(),'Харесва ми!')])[2]", "xpath:link"],
+        ["xpath=(//a[@onclick='like_blog_post()'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='sitebody']/div[2]/div/div/div/div[2]/div/span/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[3]", "xpath:href"],
+        ["xpath=//span/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8997697-447c-44e5-8b87-82b38cfacbce",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.blog_flybar_right:nth-child(1) .blog_post_likes_count",
+      "targets": [
+        ["css=.blog_flybar_right:nth-child(1) .blog_post_likes_count", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div[2]/div/div/div/div[2]/div/span/div/span/font", "xpath:idRelative"],
+        ["xpath=//span/div/span/font", "xpath:position"]
+      ],
+      "value": "afterLikeCount"
+    }, {
+      "id": "ddd404d6-e85a-4747-a6b1-934e4bdae1ae",
+      "comment": "",
+      "command": "echo",
+      "target": "The likes before we liked were ${priorLikeCount}, The likes after we liked are ${afterLikeCount}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "950809c2-5e8f-48fe-8267-672074d0dbd5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var num1 = parseInt(${priorLikeCount}); var num2 = parseInt(${afterLikeCount}); return num2 == (num1 + 1);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "86422598-b70d-41af-a011-d6a39a40923f",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }]
+  }, {
+    "id": "8a5aa42a-06a6-4578-b9f5-c7615d80b8ee",
+    "name": "DislikeArticleInTheBlog",
+    "commands": [{
+      "id": "ba13f2e8-e55c-439f-ad1e-8d5e41093def",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "185ec66b-bca7-4f15-9f35-6133ba88aab3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66bb6c3d-8659-45ad-86e4-886465e163ce",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(.,'Блог')]",
+      "targets": [
+        ["linkText=Блог", "linkText"],
+        ["css=.nhnvitm_icon_blog", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/blog')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9607e64-fedf-4ac1-befe-0d22223e1b74",
+      "comment": "",
+      "command": "echo",
+      "target": "The blog tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81481674-6e8c-4cd3-bd96-90118859b034",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Блог",
+      "targets": [
+        ["linkText=Блог", "linkText"],
+        ["css=.nhnvitm_icon_blog", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/blog')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c36e6d54-d4ed-4cf9-ae8d-589c2543d443",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[2]/div/div[2]/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e7f1d3c-e8f2-4023-b906-dd440e8714a6",
+      "comment": "",
+      "command": "echo",
+      "target": "There is at least one article present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "500c52e4-b3d0-4870-ae18-518f92b49694",
+      "comment": "",
+      "command": "store",
+      "target": "https://grabo.bg/blog/post",
+      "targets": [],
+      "value": "articleUrlTemplate"
+    }, {
+      "id": "54cc512d-69ae-40ef-a020-ae38c1ed960d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sitebody']/div/div/div[2]/div/div[2]/div/a",
+      "targets": [
+        ["linkText=За тайнството и традициите на Бъдната вечер", "linkText"],
+        ["css=.blog-post:nth-child(1) .blog-post-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'За тайнството и традициите на Бъдната вечер')]", "xpath:link"],
+        ["xpath=//div[@id='sitebody']/div/div/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://grabo.bg/blog/post/129')])[8]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "542db5db-e6bc-4e35-8a70-6e9bf471cc04",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var articleUrl = window.location.href; var temp = ${articleUrlTemplate}; return articleUrl.includes(temp);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "e9817436-612a-445f-b170-4595b9a79ad4",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "9ee3924c-33aa-483e-b2c1-dbe3dd2a4641",
+      "comment": "",
+      "command": "echo",
+      "target": "The article page is displayed. The urls match.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c93170ce-52b6-402b-9e5f-ac7b85984b09",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.blog_flybar_right:nth-child(1) > .blog_flybar_like_close",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "316c8cef-0801-4255-82cf-ad9bb7f8f3de",
+      "comment": "",
+      "command": "echo",
+      "target": "The dislike button is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf0929ce-6618-4b63-a5b8-a7887541057e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.blog_flybar_right:nth-child(1) .blog_post_likes_count",
+      "targets": [
+        ["css=.blog_flybar_right:nth-child(1) .blog_post_likes_count", "css:finder"],
+        ["xpath=//div[@id='sitebody']/div[2]/div/div/div/div[2]/div/span/div/span/font", "xpath:idRelative"],
+        ["xpath=//span/div/span/font", "xpath:position"]
+      ],
+      "value": "priorLikeCount"
+    }, {
+      "id": "a05594a0-59c9-48f2-ba23-ae5cc95d6f5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blog_flybar_right:nth-child(1) > .blog_flybar_like_close",
+      "targets": [
+        ["css=.blog_flybar_right:nth-child(1) > .blog_flybar_like_close", "css:finder"],
+        ["xpath=(//a[@onclick='unlike_blog_post()'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='sitebody']/div[2]/div/div/div/div[2]/div/span/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[4]", "xpath:href"],
+        ["xpath=//span/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7312482-a8e6-46c4-9a88-9d82a08b647b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.blog_flybar_right:nth-child(1) .blog_post_likes_count",
+      "targets": [],
+      "value": "postLikeCount"
+    }, {
+      "id": "b7ed2d14-e38c-4952-ae0c-5cb815395019",
+      "comment": "",
+      "command": "echo",
+      "target": "The likes before we disliked were ${priorLikeCount}, The likes after we disliked are ${postLikeCount}.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dde03e98-788a-4c30-915c-9cdf12a1a3ad",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var num1 = parseInt(${priorLikeCount}); var num2 = parseInt(${postLikeCount}); return num2 == (num1 - 1);",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "8f5deec6-3aab-46ff-a83e-d7b8f8c10685",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }]
+  }, {
+    "id": "861542ae-d630-4469-b6c4-1df97420413c",
+    "name": "ChangePhoneNumberInProfile",
+    "commands": [{
+      "id": "8e60e7fa-a4df-429d-853e-90eb0cccc407",
+      "comment": "",
+      "command": "open",
+      "target": "/sofia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf188ed5-aac3-4729-8356-349d3ee74a39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc3e0063-8722-45e6-82be-a078d1322d95",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [
+        ["linkText=Спас", "linkText"],
+        ["css=.nhdr_showusermenu", "css:finder"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Спас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c47af7e7-d52f-4402-92b0-cc977117cc00",
+      "comment": "",
+      "command": "echo",
+      "target": "Profile tab is available.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a4e3d01-c753-42d2-9ee7-30f11e0d3a30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [
+        ["css=.nhdr_user", "css:finder"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Спас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46b4c974-d34b-446f-850e-03e1056cc9b6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5272effd-6041-4def-9bac-2c03ef03c009",
+      "comment": "",
+      "command": "echo",
+      "target": "The settings tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "538f2adb-f5b1-4556-ab2c-45fe9ad6d168",
+      "comment": "",
+      "command": "store",
+      "target": "https://grabo.bg/user/settings/data",
+      "targets": [],
+      "value": "settingsUrl"
+    }, {
+      "id": "1878b770-4b59-491b-bbf7-374277f449de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b12bf2af-6164-49ab-bc23-9bbffcca9a9e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=.onsetnav", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54bfd19e-1837-4ad1-b8ea-ce412976ff9d",
+      "comment": "",
+      "command": "echo",
+      "target": "Profile settings tab is available.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "baea1779-08be-4e4a-9537-97cb834627b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=.onsetnav", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e18361d-bea5-4456-9ff5-b5f5701dddb0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var currUrl = window.location.href; var temp = ${settingsUrl}; return currUrl == temp;",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "421ace37-23ee-4c5a-8ae9-ae1d43377b8a",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "ce180346-af92-43fc-a1c0-6019dd601d82",
+      "comment": "",
+      "command": "echo",
+      "target": "The settings tab is displayed. The urls match.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06503e50-cfa4-4cab-8d64-7c994ef052be",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=gsm",
+      "targets": [
+        ["name=gsm", "name"],
+        ["css=tr:nth-child(3) .accountinputs", "css:finder"],
+        ["xpath=//input[@name='gsm']", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b54d27d-15a3-4f59-a8bf-8a02b8c31cc1",
+      "comment": "",
+      "command": "echo",
+      "target": "Phone number tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b992b80-5964-4e87-8d33-d2f9a153bfa8",
+      "comment": "",
+      "command": "store",
+      "target": "088 000 8888",
+      "targets": [],
+      "value": "phone"
+    }, {
+      "id": "cc6afac2-c4ac-4090-acf2-602a3ee9d272",
+      "comment": "",
+      "command": "click",
+      "target": "name=gsm",
+      "targets": [
+        ["name=gsm", "name"],
+        ["css=tr:nth-child(3) .accountinputs", "css:finder"],
+        ["xpath=//input[@name='gsm']", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c17b342-f25e-4acd-9df1-aed187e9b632",
+      "comment": "",
+      "command": "type",
+      "target": "name=gsm",
+      "targets": [],
+      "value": "${phone}"
+    }, {
+      "id": "70f0e903-3516-4dbb-9337-8bdb761aeeb8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b",
+      "targets": [
+        ["css=.accountbtn > b", "css:finder"],
+        ["xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b", "xpath:idRelative"],
+        ["xpath=//td[2]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Запази')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08fbf0c4-ed01-4abe-8856-4392d8c6ab86",
+      "comment": "",
+      "command": "echo",
+      "target": "Save settings tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49808965-b110-4ea3-a29b-27e5577b185e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b",
+      "targets": [
+        ["css=.accountbtn > b", "css:finder"],
+        ["xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b", "xpath:idRelative"],
+        ["xpath=//td[2]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Запази')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5ad5391-df02-416f-9be2-52f4a42369aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69968c24-0733-4a59-903c-0ebe4bc50b9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [
+        ["css=.nhdr_user > em", "css:finder"],
+        ["xpath=//em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6da260a4-371c-4e1a-b64e-5f68432bd1d0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89a7b3d6-8669-4f7e-b4fa-6ad7d86a1cee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=.onsetnav", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5044d227-40f0-476d-8ef1-61add045fcce",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "css=tr:nth-child(3) .accountinputs@value",
+      "targets": [],
+      "value": "resPhone"
+    }, {
+      "id": "2cf4a164-5082-44c7-866a-b62d990789ff",
+      "comment": "",
+      "command": "echo",
+      "target": "The phone we wanted to set was ${phone}, The phone set on the website is ${resPhone}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e98e16b6-c83c-46d5-8d82-e6d05dfb3a9c",
+      "comment": "",
+      "command": "assert",
+      "target": "phone",
+      "targets": [],
+      "value": "${resPhone}"
+    }]
+  }, {
+    "id": "6098555c-39bb-4e11-894f-d5176cb2077f",
+    "name": "ChangeFullNameInProfile",
+    "commands": [{
+      "id": "df360476-17a2-4f16-9cd8-432f8899e9e1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14d6d237-7eeb-4e89-8229-0b1774e05c07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee594602-c3a1-488c-8f20-a19217a71ccb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [
+        ["linkText=string", "linkText"],
+        ["css=.nhdr_showusermenu", "css:finder"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'string')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1fad860-3518-477d-8b9d-d201e2128975",
+      "comment": "",
+      "command": "echo",
+      "target": "The profile tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7d02436-9d6d-4fe1-b295-4391acf0d335",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_user > b",
+      "targets": [
+        ["css=.nhdr_user > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Спас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f18d074-5c53-4bdf-bb43-100246bcb971",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "632d10d1-70e9-475d-96f5-604c5d6b0660",
+      "comment": "",
+      "command": "echo",
+      "target": "Settings tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc75e6e6-3909-4884-a63f-759adfc2a2a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8d54314-61a0-47e6-ab23-eb068652678d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=.onsetnav", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc357541-7cab-445c-a4b5-1d23693c40cc",
+      "comment": "",
+      "command": "echo",
+      "target": "Profile settings tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23f4fece-0931-45a3-b577-bbb5f964b28f",
+      "comment": "",
+      "command": "store",
+      "target": "https://grabo.bg/user/settings/data",
+      "targets": [],
+      "value": "settingsUrl"
+    }, {
+      "id": "1850f3c3-2bbf-4d29-89df-abf57f3dd5ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=.onsetnav", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24135105-984b-4c1f-8eb7-69e14d6e974d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var currUrl = window.location.href; var temp = ${settingsUrl}; return currUrl == temp;",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "9eb10015-d245-46f8-8aa1-ea0dfd38ab67",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "2210f48d-7032-4bfe-9c16-c4651bb1adeb",
+      "comment": "",
+      "command": "echo",
+      "target": "The settings page is displayed, the urls match.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a67d927-38d4-4bb5-a4ad-1b4c182d9a8f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=tr:nth-child(2) .accountinputs", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "294cd7e9-10a8-4e12-b6d0-a2b15f1e06ec",
+      "comment": "",
+      "command": "echo",
+      "target": "Full name tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f26dd6df-9718-4b63-9070-afcf4b22b2d7",
+      "comment": "",
+      "command": "store",
+      "target": "Стефан Иванов",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "92413534-3d44-4dbd-9758-d58a0d2d2973",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=tr:nth-child(2) .accountinputs", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23767073-25da-4495-832c-4e7b3370895e",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=tr:nth-child(2) .accountinputs", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "163378a0-fb50-4204-93bf-77721695b7ff",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.accountbtn > b",
+      "targets": [
+        ["css=.accountbtn > b", "css:finder"],
+        ["xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b", "xpath:idRelative"],
+        ["xpath=//td[2]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Запази')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab64f0bf-d831-44d2-8d90-43880f795495",
+      "comment": "",
+      "command": "echo",
+      "target": "Save settings element is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b8dc99d-575a-44cd-94db-a5ea37cc835b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn > b",
+      "targets": [
+        ["css=.accountbtn > b", "css:finder"],
+        ["xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b", "xpath:idRelative"],
+        ["xpath=//td[2]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Запази')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae061d32-d75c-447c-8baf-2b201d186e63",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09923f41-6434-4b4a-8c09-66216ab48dfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_user",
+      "targets": [
+        ["css=.nhdr_user", "css:finder"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'string')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93dabffd-f28d-4cb9-a25c-b3c885a39012",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76a78f88-e6fa-47f9-a205-fce9f4d78322",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=.onsetnav", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6a53544-0395-42e8-a7b0-fb55502f3889",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "css=tr:nth-child(2) .accountinputs@value",
+      "targets": [],
+      "value": "resName"
+    }, {
+      "id": "93003f11-cc18-4e9e-93af-da00c461c38e",
+      "comment": "",
+      "command": "echo",
+      "target": "The name we wanted is ${name}, The name set in the site is ${resName}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a906a73-ae22-4cbb-885b-4c2106957729",
+      "comment": "",
+      "command": "assert",
+      "target": "name",
+      "targets": [],
+      "value": "${resName}"
+    }]
+  }, {
+    "id": "20811cd2-78c3-48fb-9dc9-c4bf69d2705d",
+    "name": "ChangeGenderInProfile",
+    "commands": [{
+      "id": "0987451f-9aac-43f9-b862-c82a47dc67a5",
+      "comment": "",
+      "command": "open",
+      "target": "/sofia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24e1841d-81c4-41f1-a8da-2612a30ff61f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09c2576b-c15d-43f3-b642-0f29460d6240",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [
+        ["linkText=Спас", "linkText"],
+        ["css=.nhdr_showusermenu", "css:finder"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Спас')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9afd3b7-eb21-4f8c-85a3-14c0df6bda12",
+      "comment": "",
+      "command": "echo",
+      "target": "The profile tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3143606a-01fa-4d3e-8f08-0bd0080ad2a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [
+        ["css=.nhdr_user > em", "css:finder"],
+        ["xpath=//em", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "493eb94c-0038-4ae4-a584-4ad469c595bc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc470e9b-9362-4691-8df0-abc831b7a79b",
+      "comment": "",
+      "command": "echo",
+      "target": "The settings tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc6bd640-1401-415d-a9dd-799e7d18972b",
+      "comment": "",
+      "command": "store",
+      "target": "https://grabo.bg/user/settings/data",
+      "targets": [],
+      "value": "settingsUrl"
+    }, {
+      "id": "dd7f6799-20ee-4668-9f1b-fa53d3186b8d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d109d5a7-7adf-4b3c-b99e-1330021af765",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Профилни данни",
+      "targets": [
+        ["linkText=Профилни данни", "linkText"],
+        ["css=.onsetnav", "css:finder"],
+        ["xpath=//a[contains(text(),'Профилни данни')]", "xpath:link"],
+        ["xpath=//div[@id='newsettings_nav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings/data')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Профилни данни')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fd2903d-e885-439d-a586-f0d1c269f0f2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var currUrl = window.location.href; var temp = ${settingsUrl}; return currUrl == temp;",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "5748e9c7-8241-4ee6-b36a-b4ea60e629ff",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "0a0e8968-44f0-42db-b18a-1b7b3d890993",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//table[@id='orderform']/tbody/tr[6]/td[2]",
+      "targets": [
+        ["css=tr:nth-child(6) > td:nth-child(2)", "css:finder"],
+        ["xpath=//table[@id='orderform']/tbody/tr[6]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a130037-daee-4329-9f4a-74c2046d209a",
+      "comment": "",
+      "command": "echo",
+      "target": "The gender tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a63cb438-08d0-488d-bc57-02e5133d88ae",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return (document.querySelectorAll('input[name=\"gender\"]'))[0].checked",
+      "targets": [],
+      "value": "isMaleChecked"
+    }, {
+      "id": "f6cd1d72-ba48-4fd5-8dca-44cf194d5568",
+      "comment": "",
+      "command": "echo",
+      "target": "If male is checked, we check female. If female is checked, we check male.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55917d44-84b7-4af9-ae21-fd626c6027ac",
+      "comment": "",
+      "command": "echo",
+      "target": "Is male checked : ${isMaleChecked};",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b577529-ed2f-4751-a912-a653024b7f0f",
+      "comment": "",
+      "command": "if",
+      "target": "${isMaleChecked} === true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c21b7bc-8fa6-4d0d-8c33-297f262ea2a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(2) > input",
+      "targets": [
+        ["css=label:nth-child(2) > input", "css:finder"],
+        ["xpath=(//input[@name='gender'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[6]/td[2]/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ebcd89d-3252-49d6-8079-55c01e8292a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn > b",
+      "targets": [
+        ["css=.accountbtn > b", "css:finder"],
+        ["xpath=//table[@id='orderform']/tbody/tr[8]/td[2]/a/b", "xpath:idRelative"],
+        ["xpath=//td[2]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Запази')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04d1f49a-05f6-4743-91e9-4652100cbfa8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [
+        ["css=.nhdr_logo", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/sofia')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34aba984-9e0e-4f3d-9de7-24f3e8efac52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [
+        ["linkText=Стефан", "linkText"],
+        ["css=.nhdr_showusermenu", "css:finder"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Стефан')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0258468-d86b-4015-a9f1-e2930707b653",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки",
+      "targets": [
+        ["linkText=Настройки", "linkText"],
+        ["css=.menu_settings", "css:finder"],
+        ["xpath=//a[contains(text(),'Настройки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/settings')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Настройки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cec602c-2cbb-4361-825f-d1cd9e7b88b8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return (document.querySelectorAll('input[name=\"gender\"]'))[1].checked",
+      "targets": [],
+      "value": "isFemaleChecked"
+    }, {
+      "id": "3869f320-b34a-4b4e-9a02-9e783dee6927",
+      "comment": "",
+      "command": "echo",
+      "target": "is female tab selected : ${isFemaleChecked}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b0df6ba-5d96-407d-8346-49ea590a2bc5",
+      "comment": "",
+      "command": "assert",
+      "target": "isFemaleChecked",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "4e1f747d-05a7-4165-8292-b4a41c9a4caa",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8eeab6b5-f05e-4893-9986-d82b5d6abccd",
+      "comment": "",
+      "command": "if",
+      "target": "${isMaleChecked} === false",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b617c4a-f12b-4b69-917a-62b0608d348c",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(1) > input",
+      "targets": [
+        ["name=gender", "name"],
+        ["css=label:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='gender']", "xpath:attributes"],
+        ["xpath=//table[@id='orderform']/tbody/tr[6]/td[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb3ba72-0ffa-44a5-bd5d-6207bc8df3d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn > b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0452d1d-f235-478c-b52f-419af1dfea50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_logo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5843966f-033a-45fd-862e-d77a208a18d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nhdr_showusermenu",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7709e06-c7cd-4b8a-9c1e-014564d58b48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd2ec2e7-2eae-4af4-ae66-534d2740fac6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return (document.querySelectorAll('input[name=\"gender\"]'))[0].checked",
+      "targets": [],
+      "value": "isMaleChecked"
+    }, {
+      "id": "d58dc5f4-328a-4229-8e9d-0ced711c615f",
+      "comment": "",
+      "command": "echo",
+      "target": "is male tab selected : ${isMaleChecked};",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7796d3e-201a-46f2-a1c7-e123380cfead",
+      "comment": "",
+      "command": "assert",
+      "target": "isMaleChecked",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "5cc9ee03-d759-415d-88c7-98c3e8ad5736",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b25baff7-35bf-4151-be79-494c71733e30",
+    "name": "RegistrationWithInvalidUserPassword",
+    "commands": [{
+      "id": "fa930f28-0387-4c7d-81b7-f3f29eed1b3e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "031a58bf-8021-49f5-8d9a-b73090e421e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1116x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94f51d6a-2ac7-43c0-8333-cdbe8664ec2f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Регистрация",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a39086e4-a5a2-4ccf-a948-70b3ebcf06c9",
+      "comment": "",
+      "command": "echo",
+      "target": "Registration tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "667f79b7-be36-4422-895e-24f9e2e103cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Регистрация",
+      "targets": [
+        ["linkText=Регистрация", "linkText"],
+        ["css=.navitem:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[@onclick='hdr_signupp(); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='usernav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/signup')]", "xpath:href"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49208bc5-dcff-478d-b83b-5ca856970af3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.accountbtn:nth-child(12) > b",
+      "targets": [
+        ["css=.accountbtn:nth-child(12) > b", "css:finder"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/a/b", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/div/form/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Регистрирай ме')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9f05165-f358-48dd-bd69-9e538045260a",
+      "comment": "",
+      "command": "echo",
+      "target": "Register button is present. Registration form is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "323ff666-fb74-4823-b6eb-6bd4426e4961",
+      "comment": "",
+      "command": "store",
+      "target": "Паролата трябва да бъде поне 8 символа дълга, от съображения за Вашата сигурност. Моля, създайте по-дълга парола, която също така съдържа поне една малка буква, една главна, цифра, специален символ.",
+      "targets": [],
+      "value": "passError"
+    }, {
+      "id": "755b5410-f2bf-48c5-bb93-8767ca69123f",
+      "comment": "",
+      "command": "store",
+      "target": "Петър Петров",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "72fdcfc2-e1b6-4a1e-b895-1a3cbb4f8338",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=#droplogin_signup .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed210c11-07f3-4017-9f5a-3681fe0889c3",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=#droplogin_signup .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "1674f77d-0690-4e59-ba5f-c09e3ea40196",
+      "comment": "",
+      "command": "click",
+      "target": "css=#droplogin_signup .accountinputs:nth-child(4)",
+      "targets": [
+        ["css=#droplogin_signup .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='email'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bb665a2-c66e-4646-969c-a6850d07552d",
+      "comment": "",
+      "command": "store",
+      "target": "testemail@abv.bg",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "0f6c45d7-684a-41ea-b556-cd1dad748273",
+      "comment": "",
+      "command": "type",
+      "target": "css=#droplogin_signup .accountinputs:nth-child(4)",
+      "targets": [
+        ["css=#droplogin_signup .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='email'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "c59454af-e2c6-4337-b629-c58e3532117f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountinputs:nth-child(6)",
+      "targets": [
+        ["css=.accountinputs:nth-child(6)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28385e95-ae87-4c96-b0c3-354c15b57d62",
+      "comment": "",
+      "command": "store",
+      "target": "!",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "d5da55ee-dd3a-4637-975f-2a7f49745ba3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.accountinputs:nth-child(6)",
+      "targets": [
+        ["css=.accountinputs:nth-child(6)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "3e0537e9-87d5-4297-8618-0745fcaa8204",
+      "comment": "",
+      "command": "type",
+      "target": "name=password2",
+      "targets": [
+        ["name=password2", "name"],
+        ["css=.accountinputs:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='password2']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "fa70a3ae-edd8-4ec5-bdf0-328342ab7e67",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=label:nth-child(11) > input", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/label[3]/input", "xpath:idRelative"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d61e9d29-99ef-4209-98fe-e35cafd64358",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn:nth-child(12) > b",
+      "targets": [
+        ["css=.accountbtn:nth-child(12) > b", "css:finder"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/a/b", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Регистрирай ме')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82bd7fb7-b522-49c4-ad4f-049bc22469d6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert2",
+      "targets": [
+        ["css=.alert2", "css:finder"],
+        ["xpath=//div[@id='cocont_content']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a53dad41-e933-4701-84a7-e1336c22f76b",
+      "comment": "",
+      "command": "echo",
+      "target": "An error is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3cdfb12-745e-4e0d-a658-5f854da179fb",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.alert2",
+      "targets": [
+        ["css=.alert2", "css:finder"],
+        ["xpath=//div[@id='cocont_content']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "displayedError"
+    }, {
+      "id": "a566c1e4-a4fd-4d58-a904-f26d467fb4ac",
+      "comment": "",
+      "command": "assert",
+      "target": "passError",
+      "targets": [],
+      "value": "${displayedError}"
+    }, {
+      "id": "ac635ff3-3130-48ca-88e9-8ee9b6009068",
+      "comment": "",
+      "command": "echo",
+      "target": "You can not register with invalid password symbols.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "018d34ff-e1c3-4f30-bde7-49d9afe099ab",
+    "name": "RegistrationWithInvalidUserEmail",
+    "commands": [{
+      "id": "0ba5f360-8367-457b-a8ee-af332e6410bd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34f0b2e1-5a9d-4ad8-bdbc-0814ec22d0f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1116x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2def55c-c355-4bc4-aa6f-b343ce3eebd0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Регистрация",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2ba0ad3-1954-4f20-be52-52828fbcab80",
+      "comment": "",
+      "command": "echo",
+      "target": "Registration tab is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bb43066-918f-4bbd-aab4-4f8e9709f94a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Регистрация",
+      "targets": [
+        ["linkText=Регистрация", "linkText"],
+        ["css=.navitem:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[@onclick='hdr_signupp(); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='usernav']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://grabo.bg/user/signup')]", "xpath:href"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e613c8ed-14ff-40aa-a66b-d5df77850979",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.accountbtn:nth-child(12) > b",
+      "targets": [
+        ["css=.accountbtn:nth-child(12) > b", "css:finder"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/a/b", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/div/form/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Регистрирай ме')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c6e9480-0267-45fc-b048-f6adc1bb5140",
+      "comment": "",
+      "command": "echo",
+      "target": "Register button is present. Registration form is displayed.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97ed0e5f-e67f-42b5-ae27-d702a46f4c5b",
+      "comment": "",
+      "command": "store",
+      "target": "Невалиден e-mail адрес. Моля, опитайте отново.",
+      "targets": [],
+      "value": "emailError"
+    }, {
+      "id": "5910bb35-0c47-4979-94f7-2a05485892e8",
+      "comment": "",
+      "command": "store",
+      "target": "Петър Петров",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "78fdecd7-d2ea-4faf-8fa2-96ac24f4b4b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=#droplogin_signup .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f52deff-3036-4e01-9d9d-fbeb5f264e1c",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=#droplogin_signup .accountinputs:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "b7ea2e69-bb34-47ce-b9e9-ec1817ce81b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#droplogin_signup .accountinputs:nth-child(4)",
+      "targets": [
+        ["css=#droplogin_signup .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='email'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e86657b-103e-47b1-b9cc-3aa49d2e6401",
+      "comment": "",
+      "command": "store",
+      "target": "test",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "bf47b1ee-2a3f-4011-a4a9-9ab3cbfe23c5",
+      "comment": "",
+      "command": "type",
+      "target": "css=#droplogin_signup .accountinputs:nth-child(4)",
+      "targets": [
+        ["css=#droplogin_signup .accountinputs:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='email'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "52028411-d595-4dfe-9902-fb6aa9569e4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountinputs:nth-child(6)",
+      "targets": [
+        ["css=.accountinputs:nth-child(6)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7d3ec92-8205-4fb0-9600-6247d13b44da",
+      "comment": "",
+      "command": "store",
+      "target": "validPassword1!",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "2c441abc-527d-4614-b071-d0ac2033a7b3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.accountinputs:nth-child(6)",
+      "targets": [
+        ["css=.accountinputs:nth-child(6)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "faf5d1b6-841f-42e5-82f0-cfb01f44d94b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password2",
+      "targets": [
+        ["name=password2", "name"],
+        ["css=.accountinputs:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='password2']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "181ae2e9-77a3-432e-832b-d5acd3fe3165",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=label:nth-child(11) > input", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/label[3]/input", "xpath:idRelative"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64122bc9-368f-4539-9741-57414f40b0d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accountbtn:nth-child(12) > b",
+      "targets": [
+        ["css=.accountbtn:nth-child(12) > b", "css:finder"],
+        ["xpath=//div[@id='droplogin_signup']/div[2]/div/form/a/b", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/form/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Регистрирай ме')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39448596-0925-4680-8724-0d190a16df94",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert2",
+      "targets": [
+        ["css=.alert2", "css:finder"],
+        ["xpath=//div[@id='cocont_content']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9819e849-a58b-4158-97aa-5c5944868ae5",
+      "comment": "",
+      "command": "echo",
+      "target": "An error is present.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1baef687-b44a-4d70-ac94-3822d43fbc25",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.alert2",
+      "targets": [
+        ["css=.alert2", "css:finder"],
+        ["xpath=//div[@id='cocont_content']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "displayedError"
+    }, {
+      "id": "962477a7-a11d-41aa-984b-945c49a5831a",
+      "comment": "",
+      "command": "assert",
+      "target": "emailError",
+      "targets": [],
+      "value": "${displayedError}"
+    }, {
+      "id": "6781a235-493b-4d97-acac-a9310579d8f3",
+      "comment": "",
+      "command": "echo",
+      "target": "You can not register with invalid email.",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cd5d9e58-4032-440f-8b87-14e90e5ffde3",
+    "name": "4. SECTIONS",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["89c9eb1e-a168-4942-8b95-f319043a0965", "9816a75b-4034-4184-b445-0e80d45aabca", "65d78655-9c78-4e1b-aac7-cb4b8f11c613", "396ac904-6054-474a-98cd-67222239cea5", "9d8b9a25-7a85-465e-99cc-e5cb7934a4fe"]
+  }, {
+    "id": "7941fa34-a314-4a57-b505-e0b577d66da8",
+    "name": "3. PROFILE SETTINGS",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71dc9b12-3143-4e05-91dc-0d5b76029d85", "6098555c-39bb-4e11-894f-d5176cb2077f", "20811cd2-78c3-48fb-9dc9-c4bf69d2705d", "861542ae-d630-4469-b6c4-1df97420413c"]
+  }, {
+    "id": "18e94a61-7149-452b-9f08-b5f363474e63",
+    "name": "8. SHOPPING CART",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c90b9b05-d041-46f5-9e74-6a81d0a5031c", "60346cc0-f493-4518-9f73-f0828fed59ed"]
+  }, {
+    "id": "9037bfd2-146e-4102-b948-300efea7caad",
+    "name": "5. BLOG",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c4abc8ab-45b3-46d9-92d4-b4fa61bf0c44", "8a5aa42a-06a6-4578-b9f5-c7615d80b8ee", "3afc0933-c3c3-46e7-bda8-66c53d15a954"]
+  }, {
+    "id": "18a4345e-da51-4379-89e4-9c7b000d323e",
+    "name": "6. FAVOURITE LOCATION",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6bcfad9f-f7cf-4be5-94b5-f7a33b5895d1", "938cee5f-56e0-439c-b20a-4256bb526247"]
+  }, {
+    "id": "0f77d353-5cf6-4b0a-b7e1-cbca7f8e3547",
+    "name": "9. VIGNETTE",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["66163272-96f3-4b7c-b50c-3b4bae280324"]
+  }, {
+    "id": "a20acac3-83c5-409b-b5a0-f13b82110ba3",
+    "name": "7. SEARCH BAR",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["05bc576f-a391-412e-b4a4-8c705327fd5c"]
+  }, {
+    "id": "b7f660b2-7415-4e2a-ad88-b86799218e8f",
+    "name": "1. REGISTRATION",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["16f782ac-e9a3-4e16-b923-8a88787bf158", "b25baff7-35bf-4151-be79-494c71733e30", "018d34ff-e1c3-4f30-bde7-49d9afe099ab"]
+  }, {
+    "id": "9ff47d6d-29b8-4512-a506-77df92bb2449",
+    "name": "2. LOGIN",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["79b6f139-7b97-4c42-8518-db6d17aee207"]
+  }],
+  "urls": ["https://grabo.bg/"],
+  "plugins": []
+}
